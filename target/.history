@@ -27,3 +27,12 @@ run
 compile
 run
 ~run
+scala
+repl
+console
+:paste
+console
+var m = new Map[Int, String]()
+val m = new Map[Int, String]()
+console
+compile

@@ -9,8 +9,7 @@ class QuickUnion(N: Int)
 
     def root(p: Int) : Int = {        
         var i = p
-        while(i != id(i))        
-            i = id(i)        
+        while(i != id(i)) i = id(i)        
         i
     }
 
