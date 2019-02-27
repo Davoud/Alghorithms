@@ -25525,3 +25525,153 @@ Content-Length: 180
 [2019-02-27 18:40:04,630] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala","version":397}}}
 [2019-02-27 18:40:04,630] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - saveTextDocuemnt TextDocumentIdentifier(file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala)
 [2019-02-27 18:40:04,630] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - saveTextDocuemnt TextDocumentIdentifier(file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala)
+[2019-02-27 18:53:35,964] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 18:53:35,964] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 18:53:35,964] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":59,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":40,"character":45}}}
+[2019-02-27 18:53:35,964] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":59,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":40,"character":45}}}
+[2019-02-27 18:53:35,965] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (40, 45).
+[2019-02-27 18:53:35,965] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (40, 45).
+[2019-02-27 18:53:35,965] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 18:53:35,965] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 18:53:35,965] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 18:53:35,965] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 18:53:36,229] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 18:53:36,229] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 18:53:36,229] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":59}}
+[2019-02-27 18:53:36,229] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":59}}
+[2019-02-27 18:53:36,229] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(59)
+[2019-02-27 18:53:36,229] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(59)
+[2019-02-27 19:00:39,481] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 853
+[2019-02-27 19:00:39,481] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 853
+[2019-02-27 19:00:39,488] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/Main.scala","version":1},"contentChanges":[{"text":"import quickfind._\r\n\r\nobject Main extends App {\r\n   \r\n\r\n\r\n   def TestQuickUnion()\r\n   {\r\n       // var uf = new QuickFindUF(5)\r\n      var uf = new QuickUnion(5)\r\n      println(\"Init: \" + uf)\r\n   \r\n      uf.union(0, 1);\r\n      println(\"union (0, 1): \" + uf)\r\n      //uf.union(1, 2)\r\n      //println(uf)\r\n   \r\n      uf.union(2, 3)\r\n      println(\"union (2, 3): \" + uf)\r\n   \r\n      uf.union(0, 4)\r\n      println(\"union (0, 4): \" + uf)\r\n      \r\n      println(\"connnected (0, 3): \" + uf.connected (0, 3))\r\n      println(\"connnected (1, 4): \" + uf.connected (1, 4))\r\n\r\n      println(uf)\r\n   }\r\n}\r\n\r\n"}]}}
+[2019-02-27 19:00:39,488] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/Main.scala","version":1},"contentChanges":[{"text":"import quickfind._\r\n\r\nobject Main extends App {\r\n   \r\n\r\n\r\n   def TestQuickUnion()\r\n   {\r\n       // var uf = new QuickFindUF(5)\r\n      var uf = new QuickUnion(5)\r\n      println(\"Init: \" + uf)\r\n   \r\n      uf.union(0, 1);\r\n      println(\"union (0, 1): \" + uf)\r\n      //uf.union(1, 2)\r\n      //println(uf)\r\n   \r\n      uf.union(2, 3)\r\n      println(\"union (2, 3): \" + uf)\r\n   \r\n      uf.union(0, 4)\r\n      println(\"union (0, 4): \" + uf)\r\n      \r\n      println(\"connnected (0, 3): \" + uf.connected (0, 3))\r\n      println(\"connnected (1, 4): \" + uf.connected (1, 4))\r\n\r\n      println(uf)\r\n   }\r\n}\r\n\r\n"}]}}
+[2019-02-27 19:00:39,489] ERROR langserver.core.Connection - failed notification handler
+java.lang.NullPointerException: null
+	at org.github.dragos.vscode.EnsimeLanguageServer.onChangeTextDocument(EnsimeLanguageServer.scala:167)
+	at langserver.core.LanguageServer.$anonfun$new$1(LanguageServer.scala:42)
+	at langserver.core.LanguageServer.$anonfun$new$1$adapted(LanguageServer.scala:40)
+	at langserver.core.Connection.$anonfun$notifySubscribers$2(Connection.scala:42)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at langserver.core.Connection.$anonfun$notifySubscribers$1(Connection.scala:42)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:35)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:35)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:44)
+	at langserver.core.Connection.notifySubscribers(Connection.scala:41)
+	at langserver.core.Connection.$anonfun$start$4(Connection.scala:99)
+	at langserver.core.Connection.$anonfun$start$4$adapted(Connection.scala:99)
+	at play.api.libs.json.JsSuccess.fold(JsResult.scala:15)
+	at langserver.core.Connection.$anonfun$start$2(Connection.scala:99)
+	at langserver.core.Connection.$anonfun$start$2$adapted(Connection.scala:97)
+	at scala.Option.fold(Option.scala:158)
+	at langserver.core.Connection.start(Connection.scala:97)
+	at langserver.core.LanguageServer.start(LanguageServer.scala:50)
+	at org.github.dragos.vscode.EnsimeLanguageServer.start(EnsimeLanguageServer.scala:51)
+	at org.github.dragos.vscode.Main$.main(Main.scala:23)
+	at org.github.dragos.vscode.Main.main(Main.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at coursier.cli.qn.a(Unknown Source)
+	at coursier.cli.qm.i(Unknown Source)
+	at coursier.cli.qs.a(Unknown Source)
+	at c.g.a.c(Unknown Source)
+	at a.b.d_(Unknown Source)
+	at c.b.d.E.g(Unknown Source)
+	at c.b.e.aU.g(Unknown Source)
+	at a.c.a(Unknown Source)
+	at coursier.cli.qm.b(Unknown Source)
+	at coursier.cli.M.b(Unknown Source)
+	at a.J.d_(Unknown Source)
+	at c.E.h(Unknown Source)
+	at a.c.a(Unknown Source)
+	at coursier.cli.Coursier.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at coursier.Bootstrap.main(Bootstrap.java:412)
+[2019-02-27 19:00:39,489] ERROR langserver.core.Connection - failed notification handler
+java.lang.NullPointerException: null
+	at org.github.dragos.vscode.EnsimeLanguageServer.onChangeTextDocument(EnsimeLanguageServer.scala:167)
+	at langserver.core.LanguageServer.$anonfun$new$1(LanguageServer.scala:42)
+	at langserver.core.LanguageServer.$anonfun$new$1$adapted(LanguageServer.scala:40)
+	at langserver.core.Connection.$anonfun$notifySubscribers$2(Connection.scala:42)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.util.Try$.apply(Try.scala:209)
+	at langserver.core.Connection.$anonfun$notifySubscribers$1(Connection.scala:42)
+	at scala.collection.immutable.List.foreach(List.scala:389)
+	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:35)
+	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:35)
+	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:44)
+	at langserver.core.Connection.notifySubscribers(Connection.scala:41)
+	at langserver.core.Connection.$anonfun$start$4(Connection.scala:99)
+	at langserver.core.Connection.$anonfun$start$4$adapted(Connection.scala:99)
+	at play.api.libs.json.JsSuccess.fold(JsResult.scala:15)
+	at langserver.core.Connection.$anonfun$start$2(Connection.scala:99)
+	at langserver.core.Connection.$anonfun$start$2$adapted(Connection.scala:97)
+	at scala.Option.fold(Option.scala:158)
+	at langserver.core.Connection.start(Connection.scala:97)
+	at langserver.core.LanguageServer.start(LanguageServer.scala:50)
+	at org.github.dragos.vscode.EnsimeLanguageServer.start(EnsimeLanguageServer.scala:51)
+	at org.github.dragos.vscode.Main$.main(Main.scala:23)
+	at org.github.dragos.vscode.Main.main(Main.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at coursier.cli.qn.a(Unknown Source)
+	at coursier.cli.qm.i(Unknown Source)
+	at coursier.cli.qs.a(Unknown Source)
+	at c.g.a.c(Unknown Source)
+	at a.b.d_(Unknown Source)
+	at c.b.d.E.g(Unknown Source)
+	at c.b.e.aU.g(Unknown Source)
+	at a.c.a(Unknown Source)
+	at coursier.cli.qm.b(Unknown Source)
+	at coursier.cli.M.b(Unknown Source)
+	at a.J.d_(Unknown Source)
+	at c.E.h(Unknown Source)
+	at a.c.a(Unknown Source)
+	at coursier.cli.Coursier.main(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at coursier.Bootstrap.main(Bootstrap.java:412)
+[2019-02-27 19:00:39,489] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 155
+[2019-02-27 19:00:39,489] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 155
+[2019-02-27 19:00:39,489] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/Main.scala","version":1}}}
+[2019-02-27 19:00:39,489] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/Main.scala","version":1}}}
+[2019-02-27 19:00:39,489] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - saveTextDocuemnt TextDocumentIdentifier(file:///d%3A/SbtTest/algorithms/src/main/scala/Main.scala)
+[2019-02-27 19:00:39,489] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - saveTextDocuemnt TextDocumentIdentifier(file:///d%3A/SbtTest/algorithms/src/main/scala/Main.scala)
+[2019-02-27 19:00:50,210] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 19:00:50,210] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 19:00:50,211] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":60,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":36,"character":14}}}
+[2019-02-27 19:00:50,211] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":60,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":36,"character":14}}}
+[2019-02-27 19:00:50,211] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (36, 14).
+[2019-02-27 19:00:50,211] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (36, 14).
+[2019-02-27 19:00:50,212] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:00:50,212] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:00:50,212] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:00:50,212] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:00:51,415] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:00:51,415] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:00:51,415] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":60}}
+[2019-02-27 19:00:51,415] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":60}}
+[2019-02-27 19:00:51,415] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(60)
+[2019-02-27 19:00:51,415] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(60)
