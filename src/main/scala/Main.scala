@@ -16,8 +16,7 @@ object Main extends App {
    
    uf.union(0, 4)
    println("union (0, 4): " + uf)
-   
-   
+      
    println("connnected (0, 3): " + uf.connected (0, 3))
    println("connnected (1, 4): " + uf.connected (1, 4))
 
