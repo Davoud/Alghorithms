@@ -25675,3 +25675,141 @@ Content-Length: 63
 [2019-02-27 19:00:51,415] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":60}}
 [2019-02-27 19:00:51,415] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(60)
 [2019-02-27 19:00:51,415] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(60)
+[2019-02-27 19:02:22,894] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 19:02:22,894] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 19:02:22,894] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":61,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":10,"character":25}}}
+[2019-02-27 19:02:22,894] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":61,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":10,"character":25}}}
+[2019-02-27 19:02:22,895] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (10, 25).
+[2019-02-27 19:02:22,895] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (10, 25).
+[2019-02-27 19:02:22,895] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:22,895] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:22,895] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:22,895] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:22,943] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:22,943] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:22,944] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":61}}
+[2019-02-27 19:02:22,944] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":61}}
+[2019-02-27 19:02:22,944] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(61)
+[2019-02-27 19:02:22,944] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(61)
+[2019-02-27 19:02:24,995] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 19:02:24,995] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 210
+[2019-02-27 19:02:24,995] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":62,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":10,"character":34}}}
+[2019-02-27 19:02:24,995] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":62,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":10,"character":34}}}
+[2019-02-27 19:02:24,996] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (10, 34).
+[2019-02-27 19:02:24,996] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (10, 34).
+[2019-02-27 19:02:24,996] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:24,996] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:24,996] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:24,996] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:25,146] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:25,146] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:25,146] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":62}}
+[2019-02-27 19:02:25,146] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":62}}
+[2019-02-27 19:02:25,147] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(62)
+[2019-02-27 19:02:25,147] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(62)
+[2019-02-27 19:02:25,697] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:25,697] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:25,698] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":63,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":11,"character":0}}}
+[2019-02-27 19:02:25,698] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":63,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":11,"character":0}}}
+[2019-02-27 19:02:25,698] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (11, 0).
+[2019-02-27 19:02:25,698] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (11, 0).
+[2019-02-27 19:02:25,698] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:25,698] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:25,698] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:25,698] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:26,056] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:26,056] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:26,056] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":63}}
+[2019-02-27 19:02:26,056] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":63}}
+[2019-02-27 19:02:26,056] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(63)
+[2019-02-27 19:02:26,056] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(63)
+[2019-02-27 19:02:28,944] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:28,944] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:28,944] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":64,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":11,"character":7}}}
+[2019-02-27 19:02:28,944] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":64,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":11,"character":7}}}
+[2019-02-27 19:02:28,945] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (11, 7).
+[2019-02-27 19:02:28,945] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (11, 7).
+[2019-02-27 19:02:28,945] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:28,945] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:28,945] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:28,945] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:29,272] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:29,272] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:29,273] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":64}}
+[2019-02-27 19:02:29,273] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":64}}
+[2019-02-27 19:02:29,273] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(64)
+[2019-02-27 19:02:29,273] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(64)
+[2019-02-27 19:02:29,423] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:29,423] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:29,423] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":65,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":10,"character":8}}}
+[2019-02-27 19:02:29,423] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":65,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":10,"character":8}}}
+[2019-02-27 19:02:29,424] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (10, 8).
+[2019-02-27 19:02:29,424] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (10, 8).
+[2019-02-27 19:02:29,424] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:29,424] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:29,424] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:29,424] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:29,474] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:29,474] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:29,474] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":65}}
+[2019-02-27 19:02:29,474] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":65}}
+[2019-02-27 19:02:29,475] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(65)
+[2019-02-27 19:02:29,475] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(65)
+[2019-02-27 19:02:33,032] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:33,032] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 209
+[2019-02-27 19:02:33,033] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":66,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":2,"character":25}}}
+[2019-02-27 19:02:33,033] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":66,"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///d%3A/SbtTest/algorithms/src/main/scala/quickFind/QuckUnionBalanced.scala"},"position":{"line":2,"character":25}}}
+[2019-02-27 19:02:33,033] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:33,033] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 63
+[2019-02-27 19:02:33,033] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (2, 25).
+[2019-02-27 19:02:33,033] INFO org.github.dragos.vscode.EnsimeLanguageServer - Got hover request at (2, 25).
+[2019-02-27 19:02:33,033] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":66}}
+[2019-02-27 19:02:33,033] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":66}}
+[2019-02-27 19:02:33,033] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:33,033] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - DocUriAtPointReq future completed: succes? false
+[2019-02-27 19:02:33,033] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:33,033] DEBUG org.github.dragos.vscode.EnsimeLanguageServer - TypeAtPointReq future completed: succes? false
+[2019-02-27 19:02:33,034] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(66)
+[2019-02-27 19:02:33,034] ERROR org.github.dragos.vscode.EnsimeLanguageServer - Unknown notification CancelRequest(66)
+[2019-02-27 19:02:40,376] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 59
+[2019-02-27 19:02:40,376] DEBUG langserver.core.MessageReader - Received headers:
+Content-Length: 59
+[2019-02-27 19:02:40,377] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":67,"method":"shutdown","params":null}
+[2019-02-27 19:02:40,377] DEBUG langserver.core.Connection - Received {"jsonrpc":"2.0","id":67,"method":"shutdown","params":null}
+[2019-02-27 19:02:40,393] DEBUG langserver.core.MessageWriter - Content-Length: 199
+
+
+
+{"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":67}
+[2019-02-27 19:02:40,393] DEBUG langserver.core.MessageWriter - Content-Length: 199
+
+
+
+{"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":67}
+[2019-02-27 19:02:40,393] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":67}
+[2019-02-27 19:02:40,393] DEBUG langserver.core.MessageWriter - payload: {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params","data":{"meaning":"Invalid method parameter(s).","error":{"obj":[{"msg":["command parameters must be given"],"args":[]}]}}},"id":67}

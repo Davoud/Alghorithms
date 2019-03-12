@@ -36,3 +36,6 @@ var m = new Map[Int, String]()
 val m = new Map[Int, String]()
 console
 compile
+run
+q
+exit
