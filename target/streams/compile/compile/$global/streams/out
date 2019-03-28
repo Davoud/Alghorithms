@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mD:\SbtTest\algorithms\src\main\scala\quickFind\QuckUnionBalanced.scala:26:20: method union has return statement; needs result type[0m
-[0m[[0m[31merror[0m] [0m[0m        if(i == j) return Any[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Coding\Algorithms\src\main\scala\Main.scala:11:16: not enough arguments for constructor QuickFindBalanced: (N: Int)quickfind.QuickFindBalanced.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter N.[0m
+[0m[[0m[31merror[0m] [0m[0m      var uf = new QuickFindBalanced()[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

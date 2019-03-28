@@ -2,12 +2,13 @@ import quickfind._
 
 object Main extends App {
    
-
+  TestQuickUnion()
 
    def TestQuickUnion()
    {
-       // var uf = new QuickFindUF(5)
-      var uf = new QuickUnion(5)
+      //var uf = new QuickFindUF(5)
+      //var uf = new QuickUnion(5)
+      var uf = new QuickFindBalanced(5)
       println("Init: " + uf)
    
       uf.union(0, 1);

@@ -1,4 +1,4 @@
-package quickFind
+package quickfind
 
 class QuickFindBalanced(N: Int)
 {
