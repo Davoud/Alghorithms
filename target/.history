@@ -52,3 +52,15 @@ exit
 run
 compile
 run
+compile
+exit
+compile
+~compile
+exit
+compile
+sbt
+compile
+compil
+compile
+copile
+compile

@@ -1,5 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Coding\Algorithms\src\main\scala\Main.scala:11:16: not enough arguments for constructor QuickFindBalanced: (N: Int)quickfind.QuickFindBalanced.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter N.[0m
-[0m[[0m[31merror[0m] [0m[0m      var uf = new QuickFindBalanced()[0m
-[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Coding\Algorithms\src\main\scala\percolation\ConnectionManager.scala:37:13: not enough arguments for constructor Position: (row: Int, column: Int)percolation.Position.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter column.[0m
+[0m[[0m[31merror[0m] [0m[0m            new Position(p.row. p.column + 1))[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

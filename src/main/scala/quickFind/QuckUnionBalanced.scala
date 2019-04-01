@@ -11,6 +11,7 @@ class QuickFindBalanced(N: Int)
         size(i) = 1
     }
     
+    
     def root(p: Int) : Int = {        
         var i = p
         while(i != id(i)) { 
