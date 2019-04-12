@@ -36,6 +36,16 @@ class ConnectionManager(val rows: Int, val columns: Int, val percolation: Percol
             Position(p.row, p.column - 1),
             Position(p.row, p.column + 1))
 
-        neighbours
+        neighbours.filter(validAndOpen _)
+    }
+
+    private def validAndOpen(p: Position) : Boolean = {
+        if(p == head) true
+        if(p == tail) true
+        if(p.row >= 0 && p.column >= 0 && 
+           p.row < rows && p.column < columns && 
+           percolation.isOpen(p.row, p.column)) true
+
+        false
     }
 } 
