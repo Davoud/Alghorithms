@@ -4,7 +4,7 @@ import quickfind._
 
 case class Position(val row: Int, val column: Int)
 
-class ConnectionManager(val rows: Int, val columns: Int, val percolation: Percolation) {
+class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) => Boolean) {
 
     val headIndex = 0
     val tailIndex = (rows * columns) + 1
@@ -44,7 +44,7 @@ class ConnectionManager(val rows: Int, val columns: Int, val percolation: Percol
         if(p == tail) true
         if(p.row >= 0 && p.column >= 0 && 
            p.row < rows && p.column < columns && 
-           percolation.isOpen(p.row, p.column)) true
+           isOpen(p.row, p.column)) true
 
         false
     }

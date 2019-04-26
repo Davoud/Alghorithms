@@ -5,17 +5,17 @@ class Percolation(private val n: Int) {
 
     val grid = Array.fill[Boolean](n, n) { false }
     var numOpenSites : Int = 0
-    val connManager = new ConnectionManager(n, n, this)
+    val connManager = new ConnectionManager(n, n, isOpen)
    
     def open(row: Int, col:Int) = {
-       validateRange(row, col)
-       grid(row)(col) = true
-       connManager.open(row, col)
+        validateRange(row, col)
+        grid(row)(col) = true
+        numOpenSites += 1
+        connManager.open(row, col)
     }
 
     def isOpen(row: Int, col: Int) : Boolean = {
         validateRange(row, col)
-        numOpenSites += 1
         grid(row)(col)
     }
     
