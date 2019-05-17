@@ -1,17 +1,37 @@
-[0m[[0m[0minfo[0m] [0m[0mPackaging D:\Coding\Algorithms\target\scala-2.12\algorithms_2.12-1.0.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	quickfind\QuickFindUF.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Coding\Algorithms\target\scala-2.12\classes\quickfind\QuickFindUF.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Coding\Algorithms\target\scala-2.12\classes\Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Coding\Algorithms\target\scala-2.12\classes\Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	quickfind[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Coding\Algorithms\target\scala-2.12\classes\quickfind[0m
-[0m[[0m[0mdebug[0m] [0m[0m	quickfind\QuickFindBalanced.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Coding\Algorithms\target\scala-2.12\classes\quickfind\QuickFindBalanced.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Coding\Algorithms\target\scala-2.12\classes\Main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	quickfind\QuickUnion.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\Coding\Algorithms\target\scala-2.12\classes\quickfind\QuickUnion.class[0m
-[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[info] Packaging D:\coding\Algorithms\target\scala-2.12\algorithms_2.12-1.0.jar ...
+[debug] Input file mappings:
+[debug] 	quickfind\QuickFindUF.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\quickfind\QuickFindUF.class
+[debug] 	Main.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\Main.class
+[debug] 	Main$.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\Main$.class
+[debug] 	percolation\ConnectionManager.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\percolation\ConnectionManager.class
+[debug] 	dataStructures\Node.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\dataStructures\Node.class
+[debug] 	quickfind
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\quickfind
+[debug] 	dataStructures\Node$.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\dataStructures\Node$.class
+[debug] 	percolation\Position.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\percolation\Position.class
+[debug] 	percolation\Percolation.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\percolation\Percolation.class
+[debug] 	percolation
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\percolation
+[debug] 	percolation\Position$.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\percolation\Position$.class
+[debug] 	dataStructures\Stack.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\dataStructures\Stack.class
+[debug] 	quickfind\QuickFindBalanced.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\quickfind\QuickFindBalanced.class
+[debug] 	dataStructures\LinkListStack.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\dataStructures\LinkListStack.class
+[debug] 	dataStructures
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\dataStructures
+[debug] 	Main$delayedInit$body.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\Main$delayedInit$body.class
+[debug] 	quickfind\QuickUnion.class
+[debug] 	  D:\coding\Algorithms\target\scala-2.12\classes\quickfind\QuickUnion.class
+[info] Done packaging.

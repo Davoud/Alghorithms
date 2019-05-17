@@ -1,27 +1,42 @@
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(D:\Coding\Algorithms\src\test\scala\percolation\PercolationTest.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(PercolationTest)[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to D:\Coding\Algorithms\target\scala-2.12\test-classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.3:compile for Scala 2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.3:compile for Scala 2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 142b6774 for Scala compiler version 2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jre1.8.0_141\lib\resources.jar;C:\Program Files\Java\jre1.8.0_141\lib\rt.jar;C:\Program Files\Java\jre1.8.0_141\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_141\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_141\lib\jce.jar;C:\Program Files\Java\jre1.8.0_141\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_141\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_141\classes;C:\Users\Davood\.sbt\boot\scala-2.12.7\lib\scala-library.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	D:\Coding\Algorithms\target\scala-2.12\test-classes;D:\Coding\Algorithms\target\scala-2.12\classes;C:\Users\Davood\.ivy2\cache\org.typelevel\cats-core_2.12\jars\cats-core_2.12-1.4.0.jar;C:\Users\Davood\.ivy2\cache\org.typelevel\cats-macros_2.12\jars\cats-macros_2.12-1.4.0.jar;C:\Users\Davood\.ivy2\cache\org.typelevel\machinist_2.12\jars\machinist_2.12-0.6.5.jar;C:\Users\Davood\.sbt\boot\scala-2.12.7\lib\scala-reflect.jar;C:\Users\Davood\.ivy2\cache\org.typelevel\cats-kernel_2.12\jars\cats-kernel_2.12-1.4.0.jar;C:\Users\Davood\.ivy2\cache\org.scalactic\scalactic_2.12\bundles\scalactic_2.12-3.0.5.jar;C:\Users\Davood\.ivy2\cache\org.scalatest\scalatest_2.12\bundles\scalatest_2.12-3.0.5.jar;C:\Users\Davood\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 10.572154225 s[0m
-[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set(D:\coding\Algorithms\src\test\scala\percolation\ConnectionManagerTest.scala)
+[debug] 	modified: Set()
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set()
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set()
+[debug] All initially invalidated sources:Set(D:\coding\Algorithms\src\test\scala\percolation\ConnectionManagerTest.scala)
+[info] Compiling 1 Scala source to D:\coding\Algorithms\target\scala-2.12\test-classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.7
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.7
+[debug] [zinc] Running cached compiler 3d194ae0 for Scala compiler version 2.12.7
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Users\ndavo\.sbt\boot\scala-2.12.7\lib\scala-library.jar
+[debug] 	-classpath
+[debug] 	D:\coding\Algorithms\target\scala-2.12\test-classes;D:\coding\Algorithms\target\scala-2.12\classes;C:\Users\ndavo\.ivy2\cache\org.typelevel\cats-core_2.12\jars\cats-core_2.12-1.4.0.jar;C:\Users\ndavo\.ivy2\cache\org.typelevel\cats-macros_2.12\jars\cats-macros_2.12-1.4.0.jar;C:\Users\ndavo\.ivy2\cache\org.typelevel\machinist_2.12\jars\machinist_2.12-0.6.5.jar;C:\Users\ndavo\.sbt\boot\scala-2.12.7\lib\scala-reflect.jar;C:\Users\ndavo\.ivy2\cache\org.typelevel\cats-kernel_2.12\jars\cats-kernel_2.12-1.4.0.jar;C:\Users\ndavo\.ivy2\cache\org.scalactic\scalactic_2.12\bundles\scalactic_2.12-3.0.5.jar;C:\Users\ndavo\.ivy2\cache\org.scalatest\scalatest_2.12\bundles\scalatest_2.12-3.0.5.jar;C:\Users\ndavo\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar
+[debug] Scala compilation took 0.613906509 s
+[info] Done compiling.
+[debug] Invalidating (transitively) by inheritance from percolation.ConnectionManagerTest...
+[debug] Initial set of included nodes: Set(percolation.ConnectionManagerTest)
+[debug] Invalidated by transitive inheritance dependency: Set(percolation.ConnectionManagerTest)
+[debug] Change NamesChange(percolation.ConnectionManagerTest,ModifiedNames(changes = UsedName(info,[Default]), UsedName(wait,[Default]), UsedName(===,[Default]), UsedName(styleName,[Default]), UsedName(registerTest,[Default]), UsedName(assertCompiles,[Default]), UsedName(convertEquivalenceToBToAConversionConstraint,[Default]), UsedName(execute$default$3,[Default]), UsedName(isInstanceOf,[Default]), UsedName($asInstanceOf,[Default]), UsedName(nestedSuites,[Default]), UsedName(tags,[Default]), UsedName(yeOldeTestNames,[Default]), UsedName(succeed,[Default]), UsedName(assume,[Default]), UsedName(!=,[Default]), UsedName(equals,[Default]), UsedName(convertEquivalenceToAToBConversionConstraint,[Default]), UsedName(ignore,[Default]), UsedName(notifyAll,[Default]), UsedName($init$,[Default]), UsedName(conversionCheckedConstraint,[Default]), UsedName(assertThrows,[Default]), UsedName(##,[Default]), UsedName(hashCode,[Default]), UsedName(defaultEquality,[Default]), UsedName(notify,[Default]), UsedName(intercept,[Default]), UsedName(clone,[Default]), UsedName(testDataFor,[Default]), UsedName(registerIgnoredTest,[Default]), UsedName(percolation;ConnectionManagerTest;init;,[Default]), UsedName(suiteId,[Default]), UsedName(note,[Default]), UsedName(pendingUntilFixed,[Default]), UsedName(execute$default$1,[Default]), UsedName(assertDoesNotCompile,[Default]), UsedName(convertToEqualizer,[Implicit]), UsedName(alert,[Default]), UsedName(testDataFor$default$2,[Default]), UsedName(withClue,[Default]), UsedName(Equalizer,[Default]), UsedName(suiteName,[Default]), UsedName(convertEquivalenceToBToAConstraint,[Default]), UsedName(CheckingEqualizer,[Default]), UsedName(pending,[Default]), UsedName(unconstrainedEquality,[Implicit]), UsedName(newAssertionFailedException,[Default]), UsedName(NoArgTest,[Default]), UsedName(!==,[Default]), UsedName(typeCheckedConstraint,[Default]), UsedName(execute$default$7,[Default]), UsedName(execute$default$5,[Default]), UsedName(finalize,[Default]), UsedName(rerunner,[Default]), UsedName(execute$default$4,[Default]), UsedName(execute$default$6,[Default]), UsedName(assertTypeError,[Default]), UsedName(cancel,[Default]), UsedName(AssertionsHelper,[Default]), UsedName(assertionsHelper,[Default]), UsedName(trap,[Default]), UsedName(test,[Default]), UsedName($isInstanceOf,[Default]), UsedName(fail,[Default]), UsedName(runTests,[Default]), UsedName(ConnectionManagerTest,[Default]), UsedName(runTest,[Default]), UsedName(testNames,[Default]), UsedName(expectedTestCount,[Default]), UsedName(withFixture,[Default]), UsedName(synchronized,[Default]), UsedName(asInstanceOf,[Default]), UsedName(run,[Default]), UsedName(lowPriorityConversionCheckedConstraint,[Default]), UsedName(assert,[Default]), UsedName(newTestCanceledException,[Default]), UsedName(runNestedSuites,[Default]), UsedName(createCatchReporter,[Default]), UsedName(convertToCheckingEqualizer,[Default]), UsedName(markup,[Default]), UsedName(assertResult,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(testsFor,[Default]), UsedName(convertEquivalenceToAToBConstraint,[Default]), UsedName(execute,[Default]), UsedName(eq,[Default]), UsedName(execute$default$2,[Default]), UsedName(toString,[Default]), UsedName(lowPriorityTypeCheckedConstraint,[Default]), UsedName(==,[Default]))) invalidates 1 classes due to The percolation.ConnectionManagerTest has the following implicit definitions changed:
+[debug] 	UsedName(convertToEqualizer,[Implicit]), UsedName(unconstrainedEquality,[Implicit]).
+[debug] 	> by transitive inheritance: Set(percolation.ConnectionManagerTest)
+[debug] 	> 
+[debug] 	> 
+[debug]         
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: Set()
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] All newly invalidated classes after taking into account (previously) recompiled classes:Set()

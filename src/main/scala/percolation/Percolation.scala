@@ -3,11 +3,11 @@ package percolation
 
 class Percolation(private val n: Int) {
 
-    val grid = Array.fill[Boolean](n, n) { false }
+    val grid: Array[Array[Boolean]] = Array.fill[Boolean](n, n) { false }
     var numOpenSites : Int = 0
     val connManager = new ConnectionManager(n, n, isOpen)
    
-    def open(row: Int, col:Int) = {
+    def open(row: Int, col:Int): Unit = {
         validateRange(row, col)
         grid(row)(col) = true
         numOpenSites += 1
@@ -25,9 +25,9 @@ class Percolation(private val n: Int) {
 
     def percolates(): Boolean = connManager.percolates()
 
-    private def validateRange(row: Int, col: Int) = {
+    private def validateRange(row: Int, col: Int): Unit = {
         if (!(0 <= row && row < n && 0 <= col && col < n)) {
-            throw new IllegalArgumentException("row/col index out of range") 
+            throw new IndexOutOfBoundsException("row/col index out of range")
         }
     }
 }

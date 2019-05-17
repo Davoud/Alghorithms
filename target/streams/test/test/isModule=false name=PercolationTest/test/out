@@ -1,2 +1,6 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mPercolationTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- All nodes are closed at initiation[0m[0m
+[info] PercolationTest:
+[info] - All nodes are closed at initiation
+[info] - Opening Nodes
+[info] - Open All Nodes
+[info] - Is Fill *** FAILED ***
+[info]   false did not equal true (PercolationTest.scala:39)

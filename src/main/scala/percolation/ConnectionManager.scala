@@ -2,30 +2,30 @@ package percolation
 
 import quickfind._
 
-case class Position(val row: Int, val column: Int)
+case class Position(row: Int, column: Int)
 
 class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) => Boolean) {
 
     val headIndex = 0
-    val tailIndex = (rows * columns) + 1
+    val tailIndex: Int = (rows * columns) + 1
     val quickFind = new QuickFindBalanced(tailIndex + 1)
-    val head = new Position(0, -1)
-    val tail = new Position(rows-1, columns)
+    val head = Position(0, -1)
+    val tail = Position(rows - 1, columns)
     
-    def open(row: Int, col: Int) = {
-        var opened = new Position(row, col)
-        var indexOfOpened = indexOf(opened)
+    def open(row: Int, col: Int): Unit = {
+        val opened = Position(row, col)
+        val indexOfOpened = indexOf(opened)
         for(p <- openNeighboursOf(opened))
         {
             quickFind.union(indexOf(p), indexOfOpened)
         }
     }
     
-    def percolates() = connected(head, tail)
+    def percolates(): Boolean = connected(head, tail)
 
-    def isFull(row: Int, col: Int) = connected(head, new Position(row, col))
+    def isFull(row: Int, col: Int): Boolean = connected(head, Position(row, col))
 
-    def connected(p1: Position, p2: Position) = quickFind.connected(indexOf(p1), indexOf(p2))
+    def connected(p1: Position, p2: Position): Boolean = quickFind.connected(indexOf(p1), indexOf(p2))
     
     private def indexOf(position: Position) : Int = position.row * columns + position.column + 1
    
@@ -36,15 +36,15 @@ class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) 
             Position(p.row, p.column - 1),
             Position(p.row, p.column + 1))
 
-        neighbours.filter(validAndOpen _)
+        neighbours.filter(validAndOpen)
     }
 
     private def validAndOpen(p: Position) : Boolean = {
-        if(p == head) true
-        if(p == tail) true
+        if(p == head) return true
+        if(p == tail) return true
         if(p.row >= 0 && p.column >= 0 && 
            p.row < rows && p.column < columns && 
-           isOpen(p.row, p.column)) true
+           isOpen(p.row, p.column)) return true
 
         false
     }
