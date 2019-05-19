@@ -1,11 +1,11 @@
-[debug] Running TaskDef(PercolationTest, org.scalatest.tools.Framework$$anon$1@bf011f2, false, [SuiteSelector])
-[debug] Running TaskDef(percolation.ConnectionManagerTest, org.scalatest.tools.Framework$$anon$1@bf011f2, false, [SuiteSelector])
-[info] Run completed in 216 milliseconds.
-[info] Total number of tests run: 5
+[debug] Running TaskDef(percolation.ConnectionManagerTest, org.scalatest.tools.Framework$$anon$1@1430060d, false, [SuiteSelector])
+[debug] Running TaskDef(percolation.PercolationTest, org.scalatest.tools.Framework$$anon$1@1430060d, false, [SuiteSelector])
+[info] Run completed in 184 milliseconds.
+[info] Total number of tests run: 1
 [info] Suites: completed 2, aborted 0
-[info] Tests: succeeded 3, failed 2, canceled 0, ignored 0, pending 0
-[info] *** 2 TESTS FAILED ***
+[info] Tests: succeeded 0, failed 1, canceled 0, ignored 4, pending 0
+[info] *** 1 TEST FAILED ***
+[debug] Passed tests:
+[debug] 	percolation.PercolationTest
 [error] Failed tests:
 [error] 	percolation.ConnectionManagerTest
-[error] 	PercolationTest
-[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful

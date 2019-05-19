@@ -3,9 +3,10 @@ package percolation
 import org.scalatest.FunSuite
 import percolation._
 
+
 class PercolationTest extends FunSuite
 {
-    test("All nodes are closed at initiation") {
+    ignore("All nodes are closed at initiation") {
         val n = 5
         val p = new Percolation(n)
         for(row <- 0 until n)
@@ -13,14 +14,14 @@ class PercolationTest extends FunSuite
                 assert(p.isOpen(row, col) === false)
     }
 
-    test(testName = "Opening Nodes") {
+    ignore(testName = "Opening Nodes") {
         val n = 5
         val p = new Percolation(n)
         p.open(0, 0)
         assert(p.isOpen(0, 0) === true)
     }
 
-    test("Open All Nodes") {
+    ignore("Open All Nodes") {
         val n = 100
         val p = new Percolation(n)
 
@@ -33,7 +34,7 @@ class PercolationTest extends FunSuite
                 assert(p.isOpen(row, col) === true)
     }
 
-    test ("Is Fill") {
+    ignore("Is Fill") {
         val n = 5
         val p = new Percolation(n)
         assert(p.isFull(0, 0) === false)

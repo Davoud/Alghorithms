@@ -15,8 +15,10 @@ class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) 
     def open(row: Int, col: Int): Unit = {
         val opened = Position(row, col)
         val indexOfOpened = indexOf(opened)
+        Console.println("<*> Index: " + indexOfOpened)
         for(p <- openNeighboursOf(opened))
         {
+            Console.println("<*>  Neighbour " + p + " Index: " + indexOf(p))
             quickFind.union(indexOf(p), indexOfOpened)
         }
     }
@@ -27,7 +29,7 @@ class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) 
 
     def connected(p1: Position, p2: Position): Boolean = quickFind.connected(indexOf(p1), indexOf(p2))
     
-    private def indexOf(position: Position) : Int = position.row * columns + position.column + 1
+    private def  indexOf(position: Position) : Int = position.row * columns + position.column + 1
    
     private def openNeighboursOf(p: Position): Seq[Position] = {
         val neighbours = Vector(
