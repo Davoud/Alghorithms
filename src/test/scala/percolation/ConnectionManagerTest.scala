@@ -11,7 +11,7 @@ class ConnectionManagerTest extends FunSuite {
         assert(cm.percolates() === true)
      }
 
-    test("percolatex 2x2 matrix, route 1"){
+    test("percolatex 2x2 matrix, route 10/10"){
       var cm = new ConnectionManager(2,2, (_,_) => true)
       assert(cm.percolates() === false)
       cm.open(0,0)
@@ -20,7 +20,7 @@ class ConnectionManagerTest extends FunSuite {
       assert(cm.percolates() === true)
     }
 
-    test("percolate 2x2 matrix, route 2"){
+    test("percolate 2x2 matrix, route 01/01"){
       val cm = new ConnectionManager(2, 2, (_, _) => true)
       assert(cm.percolates() === false)
       cm.open(0,1)
@@ -47,5 +47,14 @@ class ConnectionManagerTest extends FunSuite {
     assert(cm.percolates() === false)
   }
 
-  test("percolates 3x3 ")
+  test("percolates 3x3 route 100/100/100"){
+    val cm = new ConnectionManager(3, 3, (a, b) => b == 0)
+    assert(cm.percolates() === false)
+    cm.open(0 ,0)
+    assert(cm.percolates() === false)
+    cm.open(1, 0)
+    assert(cm.percolates() === false)
+    cm.open(2, 0)
+    assert(cm.percolates() === true)
+  }
 }
