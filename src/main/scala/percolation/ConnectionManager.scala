@@ -15,10 +15,10 @@ class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) 
     def open(row: Int, col: Int): Unit = {
         val opened = Position(row, col)
         val indexOfOpened = indexOf(opened)
-        Console.println("<*> Index: " + indexOfOpened)
+        //Console.println("<*> Index: " + indexOfOpened)
         for(p <- openNeighboursOf(opened))
         {
-            Console.println("<*>  Neighbour " + p + " Index: " + indexOf(p))
+            //Console.println("<*>  Neighbour " + p + " Index: " + indexOf(p))
             quickFind.union(indexOf(p), indexOfOpened)
         }
     }
@@ -32,11 +32,17 @@ class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) 
     private def  indexOf(position: Position) : Int = position.row * columns + position.column + 1
    
     private def openNeighboursOf(p: Position): Seq[Position] = {
-        val neighbours = Vector(
+        var neighbours = Vector(
             Position(p.row - 1, p.column),
             Position(p.row + 1, p.column),
             Position(p.row, p.column - 1),
             Position(p.row, p.column + 1))
+
+        if(p.row == 0 && !neighbours.contains(head))
+            neighbours = neighbours :+ head
+
+        if(p.row == rows - 1 && !neighbours.contains(tail))
+            neighbours = neighbours :+ tail
 
         neighbours.filter(validAndOpen)
     }
@@ -45,7 +51,7 @@ class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) 
         if(p == head) return true
         if(p == tail) return true
         if(p.row >= 0 && p.column >= 0 && 
-           p.row < rows && p.column < columns && 
+           p.row < rows && p.column < columns &&
            isOpen(p.row, p.column)) return true
 
         false

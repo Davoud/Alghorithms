@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms-build.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7a6c455be7a286025f73$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7a6c455be7a286025f73.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7a6c455be7a286025f73.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8ebfb62e9c575443b767$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8ebfb62e9c575443b767.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$8ebfb62e9c575443b767.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a089c3337a0344e60ed4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a089c3337a0344e60ed4.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a089c3337a0344e60ed4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b2a288a4c6a12c523de0$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b2a288a4c6a12c523de0.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b2a288a4c6a12c523de0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d31ff543960545addf1f$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d31ff543960545addf1f.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d31ff543960545addf1f.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d60f7c0989ec740b8742$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e148c4d6ff1421c7b042$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e148c4d6ff1421c7b042.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e148c4d6ff1421c7b042.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ec0bdb97622120a5a194$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ec0bdb97622120a5a194.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ec0bdb97622120a5a194.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f32239dd060253730a6f$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f32239dd060253730a6f.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f32239dd060253730a6f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-compile-internal.xml" afterDir="false" />
@@ -42,35 +20,26 @@
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-scala-tool.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/percolation/PercolationTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/percolation/PercolationTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms$sources/1.0/resolved.xml.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms$sources/1.0/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/percolation/ConnectionManagerTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/percolation/ConnectionManagerTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/algorithms_2.12-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/algorithms_2.12-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Main$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Main$delayedInit$body.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/percolation/ConnectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/percolation/ConnectionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/hello-world_2.12-1.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms_2.12/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms_2.12/1.0/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms_2.12/1.0/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms_2.12/1.0/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-compile-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-compile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-optional.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-provided.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-runtime-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-runtime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-scala-tool.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test-internal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/hello-world_2.12/1.0/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/hello-world_2.12/1.0/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.2.3/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.2.3/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.2.5/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-98ec89c315ed408f615fff2c4774286d17323b01/1.2.5/resolved.xml.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-compile-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-compile.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-optional.xml" afterDir="false" />
@@ -82,20 +51,45 @@
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-scala-tool.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms_2.12-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/PercolationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-compile-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-runtime-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-scala-tool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-test-internal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_2.12-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ivy-report.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ivy-report.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ivy-report.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ivy-report.xsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-compile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-optional.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-provided.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-runtime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-98ec89c315ed408f615fff2c4774286d17323b01-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/percolation/ConnectionManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/percolation/ConnectionManagerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/console/$global/streams/out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/$global/$global/definedTestNames/data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/run/$global/streams/out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=PercolationTest/test/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=percolation.ConnectionManagerTest/test/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/isModule=false name=percolation.ConnectionManagerTest/test/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/testOnly/$global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/testOnly/isModule=false name=PercolationTest/test/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/PercolationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-PercolationTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-percolation.ConnectionManagerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-percolation.ConnectionManagerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-reports/percolation.ConnectionManagerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/percolation.ConnectionManagerTest.xml" afterDir="false" />
     </list>
@@ -144,6 +138,9 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="algorithms" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -155,11 +152,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="140">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -168,19 +165,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala">
+        <entry file="file://$PROJECT_DIR$/project/build.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/percolation/ConnectionManagerTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="280">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -188,8 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/percolation/PercolationTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state relative-caret-position="820">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="e#21#50#0" expanded="true" />
               </folding>
@@ -200,7 +206,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/Percolation.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="240">
               <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
@@ -225,9 +231,10 @@
         <option value="$PROJECT_DIR$/src/main/scala/dataStructures/Stack.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/percolation/Percolation.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/percolation/PercolationTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/percolation/ConnectionManagerTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala" />
+        <option value="$PROJECT_DIR$/project/build.properties" />
         <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/percolation/ConnectionManagerTest.scala" />
       </list>
     </option>
   </component>
@@ -237,7 +244,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -247,55 +254,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="dataStructures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="percolation" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -303,7 +262,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -345,7 +304,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/build.sbt" value="3164433353" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="1518598428" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="3280644262" />
       </map>
     </option>
   </component>
@@ -374,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558118558308</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test connection manager">
+      <created>1558288375742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558288375742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -387,7 +353,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.21409395" />
@@ -395,7 +361,7 @@
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Favorites" order="5" side_tool="true" weight="0.3295302" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -405,11 +371,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32996207" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32869786" />
-      <window_info active="true" anchor="bottom" id="sbt-shell-toolwindow" order="8" visible="true" weight="0.39949432" />
+      <window_info active="true" anchor="bottom" id="sbt-shell-toolwindow" order="8" visible="true" weight="0.48743016" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3282123" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32869786" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.36312848" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
@@ -426,37 +392,14 @@
     <MESSAGE value="First commit Injellij" />
     <MESSAGE value="added more tests" />
     <MESSAGE value="fixed packege issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed packege issues" />
+    <MESSAGE value="test connection manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="test connection manager" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/Percolation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/percolation/PercolationTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="e#21#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Stack.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -464,27 +407,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/percolation/ConnectionManagerTest.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/percolation/PercolationTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        <state relative-caret-position="820">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#21#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/Percolation.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="240">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="140">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/ConnectionManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/percolation/ConnectionManagerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>

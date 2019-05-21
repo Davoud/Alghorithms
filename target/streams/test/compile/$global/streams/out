@@ -1,2 +1,8 @@
 [debug] Acquiring lock on file D:\coding\Algorithms\project\target\.sbt-compilation-infos\algorithms-test\.sbt-idea-lock ...
+[error] D:\coding\Algorithms\src\test\scala\percolation\ConnectionManagerTest.scala:50:7: missing argument list for method test in trait FunSuiteLike
+[error] Unapplied methods are only converted to functions when a function type is expected.
+[error] You can make this conversion explicit by writing `test _` or `test(_,_)(_)(_)` instead of `test`.
+[error]   test("percolates 3x3 ")
+[error]       ^
+[error] one error found
 [debug] Releasing lock on file D:\coding\Algorithms\project\target\.sbt-compilation-infos\algorithms-test\.sbt-idea-lock.
