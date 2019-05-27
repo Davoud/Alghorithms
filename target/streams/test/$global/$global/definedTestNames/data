@@ -1,1 +1,1 @@
-["percolation.PercolationTest","percolation.ConnectionManagerTest"]
+["percolation.ConnectionManagerTest","percolation.PercolationTest"]

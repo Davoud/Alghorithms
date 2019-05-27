@@ -1,5 +1,8 @@
 package percolation
 
+import edu.princeton.cs.algs4.WeightedQuickUnionUF
+import edu.princeton.cs.algs4.QuickFindUF
+import edu.princeton.cs.algs4.QuickUnionUF
 import quickfind._
 
 case class Position(row: Int, column: Int)
@@ -8,19 +11,18 @@ class ConnectionManager(val rows: Int, val columns: Int, var isOpen: (Int, Int) 
 
     val headIndex = 0
     val tailIndex: Int = (rows * columns) + 1
+    //val quickFind = new WeightedQuickUnionUF(tailIndex + 1)
     val quickFind = new QuickFindBalanced(tailIndex + 1)
+    //val quickFind = new QuickFindUF(tailIndex + 1)
+    //val quickFind = new QuickUnionUF(tailIndex + 1)
     val head = Position(0, -1)
     val tail = Position(rows - 1, columns)
     
     def open(row: Int, col: Int): Unit = {
         val opened = Position(row, col)
         val indexOfOpened = indexOf(opened)
-        //Console.println("<*> Index: " + indexOfOpened)
         for(p <- openNeighboursOf(opened))
-        {
-            //Console.println("<*>  Neighbour " + p + " Index: " + indexOf(p))
             quickFind.union(indexOf(p), indexOfOpened)
-        }
     }
     
     def percolates(): Boolean = connected(head, tail)

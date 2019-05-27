@@ -1,6 +1,5 @@
 package percolation
 
-
 class Percolation(private val n: Int) {
 
     val grid: Array[Array[Boolean]] = Array.fill[Boolean](n, n) { false }
@@ -8,7 +7,7 @@ class Percolation(private val n: Int) {
     val connManager = new ConnectionManager(n, n, isOpen)
    
     def open(row: Int, col:Int): Unit = {
-        validateRange(row, col)
+        if(isOpen(row, col)) return
         grid(row)(col) = true
         numOpenSites += 1
         connManager.open(row, col)
