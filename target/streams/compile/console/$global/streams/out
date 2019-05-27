@@ -1,0 +1,9 @@
+[debug] Waiting for threads to exit or System.exit to be called.
+[debug] Waiting for thread run-main-d to terminate.
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.7
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.7
+[info] Starting scala interpreter...
+[debug] 	Thread run-main-d exited.
+[debug] Interrupting remaining threads (should be all daemons).
+[debug] Sandboxed run complete..
+[debug] Exited with code 0

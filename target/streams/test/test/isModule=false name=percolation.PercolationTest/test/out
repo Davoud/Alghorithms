@@ -1,0 +1,10 @@
+[info] PercolationTest:
+[info] - All nodes are closed at initiation
+[info] - Opening Nodes
+[info] - Open All Nodes
+[info] - Percolates 1x1
+[info] - Percolates 2x2 route 10/10
+[info] - Not percolates 2x2 route 10/01
+[info] - Percolates 10x10 route: middle vertial line
+[info] - Not percolates 10x10 diagonal
+[info] - Number of open sites 10x10 diagonal
