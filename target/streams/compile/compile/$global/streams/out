@@ -1,3 +1,3 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Coding\Algorithms\src\main\scala\dataStructures\Stack.scala:46:25: ')' expected but '.' found.[0m
-[0m[[0m[31merror[0m] [0m[0m        if(N > 0 && == s.length/4) resize(s.length/2)[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Coding\Algorithms\src\main\scala\dataStructures\Queue.scala:23:23: reassignment to val[0m
+[0m[[0m[31merror[0m] [0m[0m            head.next = newNode[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
