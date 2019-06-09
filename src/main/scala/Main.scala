@@ -5,7 +5,15 @@ import quickfind._
 object Main extends App {
 
 
-   TestPercolationStats(200, 100)
+
+
+   def TestAllConnecte4(): Unit =
+   {
+      val q = new QuickFindBalanced(5)
+
+
+
+   }
 
    def TestPercolationStats(n: Int, t: Int): Unit = {
       val stopwatch = new Stopwatch()

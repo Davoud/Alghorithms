@@ -1,6 +1,7 @@
 package percolation
 
 import org.scalatest.FunSuite
+import quickfind.QuickFindBalanced
 
 class ConnectionManagerTest extends FunSuite {
 
@@ -56,5 +57,24 @@ class ConnectionManagerTest extends FunSuite {
     assert(cm.percolates() === false)
     cm.open(2, 0)
     assert(cm.percolates() === true)
+  }
+
+  test("All connected"){
+
+    val q = new QuickFindBalanced(5)
+    assert(q.allConnected() === false)
+
+    q.union(0, 1)
+    assert(q.allConnected() === false)
+
+    q.union(1, 2)
+    assert(q.allConnected() === false)
+
+    q.union(2, 3)
+    assert(q.allConnected() === false)
+
+    q.union(3, 4)
+    assert(q.allConnected() === true)
+
   }
 }
