@@ -1,19 +1,27 @@
+import dataStructures.LinkedListQueue
 import edu.princeton.cs.algs4.{StdRandom, Stopwatch}
 import percolation.{ConnectionManager, PercolationStats}
 import quickfind._
 
 object Main extends App {
 
+   TestLinkListQueue()
 
-
-
-   def TestAllConnecte4(): Unit =
+   def TestLinkListQueue(): Unit =
    {
-      val q = new QuickFindBalanced(5)
+      val queue = new LinkedListQueue[Int]()
+      queue.enqueue(1)
+      queue.enqueue(2)
+      queue.enqueue(3)
+      queue.enqueue(4)
+      queue.enqueue(5)
 
-
+      for(item <- queue)
+         println(item)
 
    }
+
+
 
    def TestPercolationStats(n: Int, t: Int): Unit = {
       val stopwatch = new Stopwatch()
