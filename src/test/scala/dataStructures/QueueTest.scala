@@ -4,10 +4,11 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class QueueTest extends FlatSpec with Matchers {
 
-  def NewQueue[A: Manifest]: Queue[A] = new ArrayQueue[A]()
+  def NewQueue[A: Manifest](e: A): Queue[A] = new ArrayQueue[A](e)
+
 
   "Queue" should "emit items in an FIFO order" in {
-      val q = NewQueue[Int]
+      val q = NewQueue[Int](-1)
       q.enqueue(1)
       q.enqueue(2)
       q.enqueue(3)
@@ -25,7 +26,7 @@ class QueueTest extends FlatSpec with Matchers {
   }
 
   it should "reflect its emptiness properly " in {
-      val q = NewQueue[Int]
+      val q = NewQueue[Int](-1)
       q.isQueueEmpty should be (true)
       q.enqueue(0)
       q.isQueueEmpty should be (false)
@@ -34,12 +35,12 @@ class QueueTest extends FlatSpec with Matchers {
   }
 
   it should "throw Exception when it is empty upon dequeue" in {
-    val q = NewQueue[String]
+    val q = NewQueue[String](null)
     a [Exception] should be thrownBy { q.dequeue() }
   }
 
   it should "be able to iterate over" in {
-    val q = NewQueue[String]
+    val q = NewQueue[String](null)
     val words = Vector("My ", "name ", "is ", "Queue!")
 
     for(word <- words)

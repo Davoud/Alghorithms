@@ -1,11 +1,87 @@
-import dataStructures.LinkedListQueue
+import dataStructures.{ArrayQueue, LinkedListQueue}
 import edu.princeton.cs.algs4.{StdRandom, Stopwatch}
 import percolation.{ConnectionManager, PercolationStats}
 import quickfind._
 
 object Main extends App {
 
-   TestLinkListQueue()
+   TestArrayQueue2()
+
+   class Person(name: String) {
+      override def toString: String = name
+   }
+
+   def TestArrayQueue2(): Unit = {
+      val q = new ArrayQueue[Person](null)
+      println("Enqueue")
+      for (i <- 1 to 8) {
+         q.enqueue(new Person("P" + i))
+         //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${i}")
+         println(q)
+      }
+
+      for (_ <- 1 to 5)
+      {
+         val item = q.dequeue()
+         //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${item}")
+         println(s"$q [$item]")
+
+      }
+
+      for(i <- 9 to 15)
+      {
+         q.enqueue(new Person(s"P$i"))
+         //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${i}")
+         println(q)
+      }
+
+      for(p <- q)
+         println(p)
+
+      while(!q.isQueueEmpty)
+      {
+         val item = q.dequeue()
+         println(s"$q [$item]")
+      }
+
+
+   }
+
+   def TestArrayQueue(): Unit = {
+      val q = new ArrayQueue[Int](-1)
+
+      println("Enqueue")
+      for (i <- 1 to 8) {
+         q.enqueue(i)
+         //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${i}")
+         println(q)
+      }
+
+      for (_ <- 1 to 5)
+      {
+         val item = q.dequeue()
+         //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${item}")
+         println(s"$q [$item]")
+
+      }
+
+      for(i <- 9 to 15)
+      {
+         q.enqueue(i)
+         //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${i}")
+         println(q)
+      }
+
+      while(!q.isQueueEmpty)
+      {
+         val item = q.dequeue()
+         println(s"$q [$item]")
+      }
+
+
+   }
+
+
 
    def TestLinkListQueue(): Unit =
    {

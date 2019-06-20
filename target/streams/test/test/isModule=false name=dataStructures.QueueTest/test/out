@@ -1,0 +1,6 @@
+[info] QueueTest:
+[info] Queue
+[info] - should emit items in an FIFO order
+[info] - should reflect its emptiness properly
+[info] - should throw Exception when it is empty upon dequeue
+[info] - should be able to iterate over

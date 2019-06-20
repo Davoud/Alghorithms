@@ -1,5 +1,4 @@
 [info] StackTest:
 [info] - Push, Push, Push, Pop, Pop, Pop
-[info] - Empty stack *** FAILED ***
-[info]   false did not equal true (StackTest.scala:25)
+[info] - Empty stack
 [info] - Poping an empty stack
