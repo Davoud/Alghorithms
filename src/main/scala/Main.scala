@@ -2,20 +2,52 @@ import dataStructures.{ArrayQueue, LinkedListQueue}
 import edu.princeton.cs.algs4.{StdRandom, Stopwatch}
 import percolation.{ConnectionManager, PercolationStats}
 import quickfind._
+import sorting._
 
 object Main extends App {
 
-   TestArrayQueue2()
+   TestSorting()
 
-   class Person(name: String) {
+   def TestSorting(): Unit = {
+
+
+      val x = Array(Person("Mike"), Person("Alison"), Person("Jack"), Person("Bernie"))
+      val length = 10000
+      val y = new Array[Int](length)
+
+      (0 until length).foreach(i => y(i) = length - i)
+
+      //Sorting.shuffle(y)
+
+      Sorting.shell(x)
+      val stopwatch = new Stopwatch()
+      //Sorting.selection(y)
+      //Sorting.shell(y)
+      Sorting.insertion(y)
+      println(stopwatch.elapsedTime())
+      //scala.util.Sorting.quickSort(y)
+
+      println(x.foldRight("")((a, b) => s"$a, $b"))
+      //println(y.foldRight("")((a, b) => s"$a, $b"))
+
+
+
+
+
+   }
+
+   //TestArrayQueue2()
+
+   case class Person(name: String) extends Ordered[Person] {
       override def toString: String = name
+      override def compare(that: Person): Int = name.compareTo(that.name)
    }
 
    def TestArrayQueue2(): Unit = {
       val q = new ArrayQueue[Person](null)
       println("Enqueue")
       for (i <- 1 to 8) {
-         q.enqueue(new Person("P" + i))
+         q.enqueue(Person("P" + i))
          //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${i}")
          println(q)
       }
@@ -30,7 +62,7 @@ object Main extends App {
 
       for(i <- 9 to 15)
       {
-         q.enqueue(new Person(s"P$i"))
+         q.enqueue(Person(s"P$i"))
          //println(s"  L: ${q.length()}, S: ${q.queueSize()}, Item: ${i}")
          println(q)
       }
