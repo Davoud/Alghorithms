@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="Added elementary sorts and some practices">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$2820b5615e3f2f98442e$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$2820b5615e3f2f98442e.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$2820b5615e3f2f98442e.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$2ed1e96f0b342c4c9b9c$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$2ed1e96f0b342c4c9b9c.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$2ed1e96f0b342c4c9b9c.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$52d037f144218191071f$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$52d037f144218191071f.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$52d037f144218191071f.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$6863be3b4d46cc79ff76$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$6863be3b4d46cc79ff76.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$6863be3b4d46cc79ff76.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$7e3e9be8985dc3e1a025$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$7e3e9be8985dc3e1a025.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$7e3e9be8985dc3e1a025.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$b8b0c6db0c93cb95b570$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$b8b0c6db0c93cb95b570.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$b8b0c6db0c93cb95b570.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ed4301e17b6b5d6e6837$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ed4301e17b6b5d6e6837.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$ed4301e17b6b5d6e6837.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/practices.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/sorting/SortingPractices.scala" afterDir="false" />
+    <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/RandomizedQueue.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2820b5615e3f2f98442e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2820b5615e3f2f98442e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2820b5615e3f2f98442e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2ed1e96f0b342c4c9b9c$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2ed1e96f0b342c4c9b9c.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2ed1e96f0b342c4c9b9c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$52d037f144218191071f$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$52d037f144218191071f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$52d037f144218191071f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6863be3b4d46cc79ff76$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6863be3b4d46cc79ff76.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6863be3b4d46cc79ff76.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7e3e9be8985dc3e1a025$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7e3e9be8985dc3e1a025.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7e3e9be8985dc3e1a025.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b8b0c6db0c93cb95b570$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b8b0c6db0c93cb95b570.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b8b0c6db0c93cb95b570.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ed4301e17b6b5d6e6837$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ed4301e17b6b5d6e6837.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ed4301e17b6b5d6e6837.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/algorithms-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-compile-internal.xml" afterDir="false" />
@@ -45,8 +41,15 @@
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-algorithms-build-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/algorithms_2.12-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/algorithms_2.12-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Main$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Main$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Main$delayedInit$body.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Main.class" afterDir="false" />
@@ -63,23 +66,8 @@
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-scala-tool.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-dataStructures.StackTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-dataStructures.StackTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-percolation.ConnectionManagerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/TEST-percolation.ConnectionManagerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/dataStructures.StackTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/dataStructures.StackTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-reports/percolation.ConnectionManagerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-reports/percolation.ConnectionManagerTest.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -132,19 +120,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="933">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="139">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/SortingPractices.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/RandomizedQueue.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+            <state relative-caret-position="-34">
+              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/package.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,29 +152,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/practices.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="403">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/Double.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding>
-                <element signature="e#1166#8839#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="216">
+              <caret line="9" column="12" selection-start-line="7" selection-start-column="2" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -182,26 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Queue.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Stack.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/Percolation.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="451">
+              <caret line="139" column="5" lean-forward="true" selection-start-line="129" selection-start-column="4" selection-end-line="139" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -209,23 +179,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/util/Sorting.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-              <folding>
-                <element signature="e#2470#5735#0" />
-              </folding>
+            <state relative-caret-position="24">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -263,10 +218,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/Sorting/Sort/Sort.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Sorting/Sort.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sorting/Sort.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sorting/SortingPractices.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/dataStructures/practices.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/dataStructures/practices.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sorting/SortingPractices.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/dataStructures/RandomizedQueue.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
       </list>
     </option>
@@ -291,8 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,14 +279,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="dataStructures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="percolation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -375,6 +321,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -543,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561065521798</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added elementary sorts and some practices">
+      <created>1561793236655</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561793236655</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -568,17 +523,17 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.32882273" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" auto_hide="true" id="Run" order="2" visible="true" weight="0.36129904" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32996207" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49934897" weight="0.3179973" />
-      <window_info anchor="bottom" x="0" y="23" width="1536" height="811" id="sbt-shell-toolwindow" maximized="true" order="8" type="WINDOWED" visible="true" weight="0.23603351" />
+      <window_info anchor="bottom" x="0" y="23" width="1536" height="811" id="sbt-shell-toolwindow" maximized="true" order="8" type="WINDOWED" weight="0.23603351" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3282123" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.36129904" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32869786" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" visible="true" weight="0.36129904" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" weight="0.35872236" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
@@ -592,6 +547,8 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="First commit Injellij" />
     <MESSAGE value="added more tests" />
     <MESSAGE value="fixed packege issues" />
@@ -605,6 +562,7 @@
     <MESSAGE value="Added selection sort" />
     <MESSAGE value="Added elementary sorts and some practices" />
     <option name="LAST_COMMIT_MESSAGE" value="Added elementary sorts and some practices" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -721,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.sbt/boot/scala-2.12.7/lib/scala-library.jar!/scala/package.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/dataStructures/QueueTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1176">
@@ -749,9 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/package.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/percolation/Percolation.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -769,13 +717,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/practices/scala.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/practices/scala.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Stack.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -793,48 +735,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Queue.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/SortingPractices.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="40" />
+        <state relative-caret-position="285">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sbt/boot/scala-2.12.7/lib/scala-library.jar!/scala/package.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/collection/IterableLike.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/collection/immutable/Seq.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/practices.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/SortingPractices.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="933">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="403">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Deque.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="139">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Queue.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="139" column="5" lean-forward="true" selection-start-line="129" selection-start-column="4" selection-end-line="139" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="12" selection-start-line="7" selection-start-column="2" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar!/scala/collection/immutable/Range.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#2854#14223#0" />
+            <element signature="e#5702#6062#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/RandomizedQueue.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>
