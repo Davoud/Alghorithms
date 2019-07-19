@@ -48,6 +48,50 @@ object Sorting{
   def shuffle[K](a: Array[K]): Unit =
     a.indices.foreach(i => exch(a, i, StdRandom.uniform(i + 1)))
 
+
+  def merge[K](a: Array[K])(implicit ev: Manifest[K], ord: Ordering[K]): Unit = {
+    val aux = new Array[K](a.length)
+    sort(a, aux, 0, a.length - 1)
+  }
+
+  private def merge[K: Ordering](a: Array[K], aux: Array[K], lo: Int, mid: Int, hi: Int): Unit = {
+    val o = implicitly[Ordering[K]]
+
+    for (k <- lo to hi)
+      aux(k) = a(k)
+
+    var i = lo
+    var j = mid + 1
+    for (k <- lo to hi) {
+      if (i > mid) {
+        a(k) = aux(j)
+        j += 1
+      }
+      else if (j > hi) {
+        a(k) = aux(i)
+        i += 1
+      }
+      else if (o.lt(aux(j), aux(i))) {
+        a(k) = aux(j)
+        j += 1
+      }
+      else {
+        a(k) = aux(i)
+        i += 1
+      }
+
+    }
+
+  }
+
+  private def sort[K: Ordering](a: Array[K], aux: Array[K], lo: Int, hi: Int): Unit = {
+    if (hi <= lo) return
+    val mid = lo + (hi - lo) / 2
+    sort(a, aux, lo, mid)
+    sort(a, aux, mid + 1, hi)
+    merge(a, aux, lo, mid, hi)
+  }
+
 }
 
 
