@@ -1,8 +1,11 @@
-import sorting.{CollinearPoints, Point, Sorting}
+import sorting.Sorting
+import sorting.Sorting.SortingMethod
 
 object Main extends App {
-  
-  CollinearPoints.TestFast()
+	
+	Sorting.TestSort(SortingMethod.Quick)
+	Sorting.TestSort(SortingMethod.Shell)
+
 
 }
 
