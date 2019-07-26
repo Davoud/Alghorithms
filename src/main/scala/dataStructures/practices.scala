@@ -48,3 +48,4 @@ class StackWithMax extends Stack[Double] {
 
   def Maximum: Double = max
 }
+

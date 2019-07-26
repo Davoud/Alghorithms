@@ -10,12 +10,19 @@ object Sorting{
     a(i) = a(j)
     a(j) = temp
   }
-
-  def insertion[K: Ordering](a: Array[K]): Unit = {
-    val o = implicitly[Ordering[K]]
+  
+  //  def insertion[K: Ordering](a: Array[K]): Unit = {
+  //    val o = implicitly[Ordering[K]]
+  //    for (i <- a.indices) {
+  //      for(j <- i until 0 by -1)
+  //        if (o.lt(a(j), a(j - 1))) exch(a, j, j - 1)
+  //    }
+  //  }
+  
+  def insertion[K](a: Array[K], ordering: Ordering[K]): Unit = {
     for (i <- a.indices) {
       for(j <- i until 0 by -1)
-        if (o.lt(a(j), a(j - 1))) exch(a, j, j - 1)
+        if (ordering.lt(a(j), a(j - 1))) exch(a, j, j - 1)
     }
   }
 
@@ -62,24 +69,20 @@ object Sorting{
 
     var i = lo
     var j = mid + 1
+
     for (k <- lo to hi) {
       if (i > mid) {
-        a(k) = aux(j)
-        j += 1
+        a(k) = aux(j); j += 1
       }
       else if (j > hi) {
-        a(k) = aux(i)
-        i += 1
+        a(k) = aux(i); i += 1
       }
       else if (o.lt(aux(j), aux(i))) {
-        a(k) = aux(j)
-        j += 1
+        a(k) = aux(j); j += 1
       }
       else {
-        a(k) = aux(i)
-        i += 1
+        a(k) = aux(i); i += 1
       }
-
     }
 
   }

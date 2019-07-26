@@ -9,7 +9,7 @@ trait Queue[A] extends Iterable[A]
     def isQueueEmpty: Boolean
 }
 
-class LinkedListQueue[A] extends Queue[A] {
+class LinkedListQueue[A: Manifest] extends Queue[A] {
 
     private var firstItem: Option[Node[A]] = None
     private var lastItem: Option[Node[A]] = None
@@ -58,6 +58,17 @@ class LinkedListQueue[A] extends Queue[A] {
             item
         }
     }
+	
+	def shuffle(): Unit = {
+		val q = new RandomizedQueue[A](4)
+		
+		while (!isQueueEmpty)
+			q enqueue dequeue
+		
+		while (!q.isQueueEmpty)
+			enqueue(q dequeue)
+		
+	}
 }
 
 
