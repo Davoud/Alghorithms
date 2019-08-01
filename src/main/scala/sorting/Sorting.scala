@@ -6,6 +6,10 @@ import edu.princeton.cs.algs4.{StdRandom, Stopwatch}
 object Sorting{
 
   private def exch[K](a: Array[K], i: Int, j: Int): Unit = {
+  
+    if (a.length < 2 || i == j)
+      return
+    
     val temp = a(i)
     a(i) = a(j)
     a(j) = temp
@@ -99,15 +103,10 @@ object Sorting{
     quick(a, 0, a.length - 1)
   }
   
-  def printState[K](a: Array[K], index: Int, lo: Int, hi: Int): Unit = {
-    val str = a.foldRight("")((a, b) => s"$a $b")
-    println(s"[$str]\tp: $index, lo: $lo, hi: $hi")
-  }
   
   def quick[K](a: Array[K], lo: Int, hi: Int)(implicit o: Ordering[K]): Unit = {
     if (hi <= lo) return
-    val index = partition(a, lo, hi)
-    //printState(a, index, lo, hi)
+    val index = partition2(a, lo, hi)
     quick(a, lo, index - 1)
     quick(a, index + 1, hi)
   }
@@ -115,10 +114,10 @@ object Sorting{
   private def partition[K](a: Array[K], lo: Int, hi: Int)(implicit o: Ordering[K]): Int = {
     var i = lo + 1
     var j = hi
-    
-    while (i < j) {
-      while (i < hi && o.lt(a(i), a(lo))) i += 1
-      while (j > lo && o.lt(a(lo), a(j))) j -= 1
+  
+    while (i <= j) {
+      while (i <= hi && o.lt(a(i), a(lo))) i += 1
+      while (j >= lo && o.lt(a(lo), a(j))) j -= 1
       if (i < j) exch(a, i, j)
     }
     
@@ -126,23 +125,72 @@ object Sorting{
     j
   }
   
+  private def partition2[K](collection: Array[K], leftMostIndex: Int, rightMostIndex: Int)(implicit comparer: Ordering[K]): Int = {
+    
+    var wallIndex: Int = leftMostIndex
+    val pivotValue: K = collection(rightMostIndex)
+    
+    for (i <- leftMostIndex until rightMostIndex) {
+      if (comparer.lt(collection(i), pivotValue)) {
+        exch(collection, i, wallIndex)
+        wallIndex += 1
+      }
+    }
+    
+    exch(collection, wallIndex, rightMostIndex)
+    wallIndex
+  }
+  
+  def quick3Way[K](collection: Array[K])(implicit comparer: Ordering[K]): Unit = {
+    quick3Way(collection, 0, collection.length - 1)
+  }
+  
+  private def quick3Way[K](collection: Array[K], leftMostIndex: Int, rightMostIndex: Int)
+                          (implicit comparer: Ordering[K]): Unit = {
+    if (rightMostIndex <= leftMostIndex) return
+    var lt = leftMostIndex
+    var gt = rightMostIndex
+    val value = collection(leftMostIndex)
+    
+    var index = leftMostIndex
+    while (index <= gt) {
+      val cmp = comparer.compare(collection(index), value)
+      if (cmp < 0) {
+        exch(collection, lt, index)
+        lt += 1
+        index += 1
+      }
+      else if (cmp > 0) {
+        exch(collection, index, gt)
+        gt -= 1
+      }
+      else {
+        index += 1
+      }
+    }
+    
+    quick3Way(collection, leftMostIndex, lt - 1)
+    quick3Way(collection, gt + 1, rightMostIndex)
+  }
+    
+  
   object SortingMethod extends Enumeration {
     val Selection = Value(1)
     val Insertion = Value(2)
     val Shell = Value(3)
     val Merge = Value(4)
     val Quick = Value(5)
+    val Quick3Way = Value(6)
   }
   
-  def TestSort(method: SortingMethod.Value, sampleSize: Int = 100000) = {
+  def TestSort(method: SortingMethod.Value, sampleSize: Int = 100000, duplications: Option[Int] = None) = {
     
     val sample = new Array[Long](sampleSize)
     
     for (i <- sample.indices)
-      sample(i) = i
+      sample(i) = if (duplications.isDefined) i % duplications.get else i
     
     sorting.Sorting.shuffle(sample)
-    println(s"IsSorted: ${sorting.Sorting.isSorted(sample)}")
     
     val t = new Stopwatch()
     
@@ -152,15 +200,20 @@ object Sorting{
       case SortingMethod.Shell => sorting.Sorting.shell(sample)
       case SortingMethod.Merge => sorting.Sorting.merge(sample)
       case SortingMethod.Quick => sorting.Sorting.quick(sample)
+      case SortingMethod.Quick3Way => sorting.Sorting.quick3Way(sample)
     }
     
-    println(s"Time ${t.elapsedTime()}")
-    println(s"IsSorted: ${sorting.Sorting.isSorted(sample)}")
+    println(s"${method} Finished in ${t.elapsedTime()} for a sample of size $sampleSize")
+    
+    if (!sorting.Sorting.isSorted(sample)) {
+      for (i <- sample) print(s"$i ")
+      throw new Exception("Sample has not been sorted properly!")
+    }
     
   }
+  
+  
 }
-
-
 
 
 
