@@ -1,22 +1,47 @@
 package sliderPuzzle
 
-class Board(inputTiles: Array[Array[Int]]) {
+case class Tile(value: Int, rowIndex: Int, columnIndex: Int)
+
+class Board(inputTiles: Array[Array[Int]], modifier: Option[Tile] = None) {
 	
-	val n = inputTiles.length
-	val tiles = Array.ofDim[Int](n, n)
+	private val n = inputTiles.length
+	private val tiles = Array.ofDim[Int](n, n)
+	private var _manhattan = 0
+	private var _hamming = 0
+	private var _goal = true
 	
-	for {
-		i <- 0 until n
-		j <- 0 until n
-	} tiles(i)(j) = inputTiles(i)(j)
+	for (row <- 0 until n)
+		for (col <- 0 until n) {
+			val tile = setTile(Tile(inputTiles(row)(col), row, col), modifier)
+			_hamming += oneIfDisplaced(tile)
+			_manhattan += distanceFromHome(tile)
+			if(tile.value != goal(row, col))
+				_goal = false
+		}
 	
+	private def setTile(tile: Tile, modifier: Option[Tile]): Tile = {
+		var value = 0
+		if (modifier.isDefined && tile.value == 0)
+			value = modifier.get.value
+		
+		else if (modifier.isDefined && tile.rowIndex == modifier.get.rowIndex && tile.columnIndex == modifier.get.columnIndex)
+			value = 0
+		
+		else
+			value = tile.value
+		
+		tiles(tile.rowIndex)(tile.columnIndex) = value
+		Tile(value, tile.rowIndex, tile.columnIndex)
+	}
 	
 	override def toString: String = {
-		var str = s"$n\n"
+		var str = s"$n (Manhattan: ${_manhattan}, Hamming: ${_hamming}) \n"
 		
 		for (i <- tiles.indices) {
-			for (j <- tiles(i).indices)
-				str += pad(tiles(i)(j))
+			for (j <- tiles(i).indices) {
+				val v = tiles(i)(j)
+				str += (if (v == 0) pad(" ") else pad(v.toString))
+			}
 			str += "\n"
 		}
 		
@@ -25,43 +50,32 @@ class Board(inputTiles: Array[Array[Int]]) {
 	
 	def dimension: Int = n
 	
-	def hamming: Int = {
-		var h = 0
-		
-		for (i <- tiles.indices)
-			for (j <- tiles(i).indices)
-				if (tiles(i)(j) != 0 && tiles(i)(j) != goal(i)(j)) h += 1
-		h
+	def manhattan: Int = _manhattan
+	
+	def hamming: Int = _hamming
+	
+	
+	@inline private def distanceFromHome(tile: Tile): Int = {
+		if (tile.value == 0 || tile.value == goal(tile.rowIndex, tile.columnIndex)) return 0
+		val homeTile = home(tile.value)
+		math.abs(tile.rowIndex - homeTile.rowIndex) + math.abs(tile.columnIndex - homeTile.columnIndex)
 	}
 	
-	@inline private def distance(i: Int, j: Int): Int = {
-		val value = tiles(i)(j)
-		if (value == 0 || value == goal(i)(j)) return 0
-		val h = home(value)
-		return math.abs(i - h._1) + math.abs(j - h._2)
-	}
+	@inline private def oneIfDisplaced(tile: Tile): Int =
+		if (tile.value != 0 && tile.value != goal(tile.rowIndex, tile.columnIndex)) 1 else 0
 	
-	def manhattan: Int = {
-		var m = 0
-		for (i <- 0 until n)
-			for (j <- 0 until n)
-				m += distance(i, j)
-		m
-	}
+	@inline private def goal(i: Int, j: Int): Int = if (i == (n - 1) && i == j) 0 else (i * n) + j + 1
 	
-	@inline private def goal(i: Int)(j: Int): Int = if (i == (n - 1) && i == j) 0 else (i * n) + j + 1
+	@inline private def home(v: Int): Tile = Tile(v, (v - 1) / n, (v - 1) % n)
 	
-	@inline private def home(v: Int): (Int, Int) = ((v - 1) / n, (v - 1) % n)
-	
-	
-	def isGoal: Boolean = this == getGoal
+	def isGoal: Boolean = _goal
 	
 	def getGoal: Board = {
 		val g = Array.ofDim[Int](n, n)
 		for {
 			i <- 0 until n
 			j <- 0 until n
-		} g(i)(j) = goal(i)(j)
+		} g(i)(j) = goal(i, j)
 		new Board(g)
 	}
 	
@@ -83,10 +97,8 @@ class Board(inputTiles: Array[Array[Int]]) {
 	}
 	
 	def newBoard(currentBlank: (Int, Int), newBlank: (Int, Int)): Board = {
-		val board = new Board(tiles)
-		board.tiles(currentBlank._1)(currentBlank._2) = tiles(newBlank._1)(newBlank._2)
-		board.tiles(newBlank._1)(newBlank._2) = 0
-		return board
+		val value = tiles(newBlank._1)(newBlank._2)
+		return new Board(tiles, Some(Tile(value, newBlank._1, newBlank._2)))
 	}
 	
 	def neighbors(): Iterable[Board] = {
@@ -116,12 +128,38 @@ class Board(inputTiles: Array[Array[Int]]) {
 	}
 	
 	
-	private def pad(n: Int): String = {
-		val len: Int = n.toString().length
+	private def pad(n: String): String = {
+		val len: Int = n.length
 		var str = ""
 		for (_ <- 0 until (5 - len))
 			str += " "
 		str + n
+	}
+	
+	def twin(): Board = {
+		val board = Array.ofDim[Int](n, n)
+		var firstNonBlank: Option[Tile] = None
+		var secondNonBlank: Option[Tile] = None
+		
+		for {
+			i <- 0 until n
+			j <- 0 until n
+		} {
+			val value = tiles(i)(j)
+			board(i)(j) = value
+			
+			if (value != 0)
+				if (firstNonBlank.isEmpty)
+					firstNonBlank = Some(Tile(value, i, j))
+				else if (secondNonBlank.isEmpty)
+					secondNonBlank = Some(Tile(value, i, j))
+		}
+		
+		board(firstNonBlank.get.rowIndex)(firstNonBlank.get.columnIndex) = secondNonBlank.get.value
+		board(secondNonBlank.get.rowIndex)(secondNonBlank.get.columnIndex) = firstNonBlank.get.value
+		
+		new Board(board)
+		
 	}
 	
 	
