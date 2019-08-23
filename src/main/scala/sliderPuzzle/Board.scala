@@ -1,5 +1,7 @@
 package sliderPuzzle
 
+import scala.collection.mutable.ListBuffer
+
 case class Tile(value: Int, rowIndex: Int, columnIndex: Int)
 
 class Board(inputTiles: Array[Array[Int]], modifier: Option[Tile] = None) {
@@ -96,26 +98,18 @@ class Board(inputTiles: Array[Array[Int]], modifier: Option[Tile] = None) {
 		true
 	}
 	
-	def newBoard(currentBlank: (Int, Int), newBlank: (Int, Int)): Board = {
-		val value = tiles(newBlank._1)(newBlank._2)
-		return new Board(tiles, Some(Tile(value, newBlank._1, newBlank._2)))
-	}
 	
-	def neighbors(): Iterable[Board] = {
+	def neighbors: Iterable[Board] = {
 		
+		val boards = new ListBuffer[Board]
 		val (i, j) = blank
 		
 		val neighborXY = Array((i - 1, j), (i, j - 1), (i + 1, j), (i, j + 1))
-			.filter(p => p._1 >= 0 && p._1 < n && p._2 >= 0 && p._2 < n)
 		
-		val neighboringBoards = new Array[Board](neighborXY.length)
+		for (xy <- neighborXY.filter(p => p._1 >= 0 && p._1 < n && p._2 >= 0 && p._2 < n))
+			boards += new Board(tiles, Some(Tile(tiles(xy._1)(xy._2), xy._1, xy._2)))
 		
-		for (b <- neighboringBoards.indices) {
-			neighboringBoards(b) = newBoard((i, j), neighborXY(b))
-		}
-		
-		neighboringBoards
-		
+		boards
 	}
 	
 	private def blank: (Int, Int) = {
