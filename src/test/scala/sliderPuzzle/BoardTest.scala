@@ -44,7 +44,7 @@ class BoardTest extends FlatSpec with Matchers {
 	}
 	
 	it should "returns 4 neighbors" in {
-		Sample3x3.neighbors().size should be(4)
+		Sample3x3.neighbors.size should be(4)
 	}
 	
 	

@@ -1,6 +1,7 @@
 package dataStructures
 
 import scala.annotation.tailrec
+import scala.runtime.Nothing$
 
 trait Queue[A] extends Iterable[A]
 {
@@ -78,7 +79,8 @@ class ArrayQueue[A: Manifest](emptyElement: A, capacity: Int = 4) extends Queue[
     var headIndex: Int = 0
     var tailIndex: Int = 0
     var qSize: Int = 0
-
+    
+    
     fillWithEmptyElement(queue)
 
     override def enqueue(item: A): Unit = {
