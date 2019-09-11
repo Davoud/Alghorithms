@@ -1,1 +1,1 @@
-["PercolationTest","dataStructures.StackTest","percolation.ConnectionManagerTest","dataStructures.QueueTest"]
+["PercolationTest","dataStructures.QueueTest","percolation.ConnectionManagerTest","dataStructures.StackTest","sliderPuzzle.BoardTest"]

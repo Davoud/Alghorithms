@@ -40,10 +40,7 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
         return None
     }
 
-    def min(): Option[Value] = {
-        if(root.isEmpty) return None
-        return Some(min(root.get).value)
-    }
+    def min(): Option[Value] = if(root.isEmpty) None else Some(min(root.get).value)
     
     private def min(x: Node): Node = {
         var node = x
@@ -139,19 +136,44 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
         x.count = 1 + size(x.left) + size(x.right)
         Some(x)
     }
+	  
+	  def keys(traversMode: TraversMode.Value = TraversMode.PreOrder): Iterable[Key] =
+        traverse(traversMode).map(node => node.key)
     
-    //    def keys(): Iterator[Key] = {
-    //        val q = new ArrayQueue[Key]()
-    //        traverse(root, q)
-    //        q
-    //    }
+    def values(traversMode: TraversMode.Value = TraversMode.PreOrder): Iterable[Value] =
+        traverse(traversMode).map(node => node.value)
     
-    private def traverse(x: Option[Node], queue: ArrayQueue[Key]): Unit = {
+    private def traverse(traversMode: TraversMode.Value): ArrayQueue[Node] = {
+        val queue = new ArrayQueue[Node]()
+        traversMode match
+        {
+            case TraversMode.PreOrder => preOrder(root, queue)
+            case TraversMode.InOrder => inOrder(root, queue)
+            case TraversMode.PostOrder => postOrder(root, queue)
+        }
+        queue
+    }
+    
+    private def preOrder(x: Option[Node], queue: ArrayQueue[Node]): Unit = {
          if(x.isEmpty) return
-         traverse(x.get.left, queue)
-        queue.enqueue(x.get.key)
-         traverse(x.get.right, queue)
-     }
+         preOrder(x.get.left, queue)
+         queue.enqueue(x.get)
+         preOrder(x.get.right, queue)
+    }
+    
+    private def inOrder(x: Option[Node], queue: ArrayQueue[Node]): Unit = {
+        if(x.isEmpty) return
+        queue.enqueue(x.get)
+        inOrder(x.get.left, queue)
+        inOrder(x.get.right, queue)
+    }
+    
+    private def postOrder(x: Option[Node], queue: ArrayQueue[Node]): Unit = {
+        if(x.isEmpty) return
+        postOrder(x.get.left, queue)
+        postOrder(x.get.right, queue)
+        queue.enqueue(x.get)
+    }
     
     private case class Node
         (key: Key,
@@ -160,10 +182,32 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
          var right: Option[Node] = None,
          var count: Int = 0)
     
+    
+    
+}
+
+object TraversMode extends Enumeration {
+    val InOrder = Value(1)
+    val PreOrder = Value(2)
+    val PostOrder = Value(3)
 }
 
 object BstVisualizer {
     def print[Key, Value](bst: Bst[Key, Value]): Unit = {
+        val values = bst.values(TraversMode.InOrder)
+        println(values.foldRight("")((v,s) => s"$v $s"))
+    }
     
+    private def pad[Value](value: Value, len: Int): String = {
+        val str = value.toString
+        val pad = spaces((len - str.length) / 2)
+        s"$pad$str$pad"
+    }
+    
+    private def spaces(len: Int): String = {
+        var str = ""
+        for(_ <- 0 until len)
+            str += " "
+        str
     }
 }

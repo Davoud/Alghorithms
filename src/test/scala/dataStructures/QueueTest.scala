@@ -4,7 +4,7 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class QueueTest extends FlatSpec with Matchers {
 
-  def NewQueue[A: Manifest](e: A): Queue[A] = new ArrayQueue[A](e)
+  def NewQueue[A: Manifest](e: A): Queue[A] = new ArrayQueue[A]()
 
 
   "Queue" should "emit items in an FIFO order" in {
