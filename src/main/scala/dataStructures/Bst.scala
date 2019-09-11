@@ -1,4 +1,5 @@
-import dataStructures.ArrayQueue
+package dataStructures
+
 
 
 class Bst[Key, Value](implicit ordering: Ordering[Key]){
@@ -49,14 +50,14 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
         node
     }
     
-    def max(): Option[Value] = {
-        if(root.isEmpty) return None
-        var x = root
-        while(x.isDefined)
-            if(x.get.right.isDefined)
-                x = x.get.right
-        Some(x.get.value)
+    private def max(x: Node): Node = {
+        var node = x
+        while (node.right.isDefined)
+            node = node.right.get
+        node
     }
+    
+    def max(): Option[Value] = if (root.isEmpty) None else Some(max(root.get).value)
     
     def rank(key: Key): Int = rank(key, root)
     
@@ -192,7 +193,41 @@ object TraversMode extends Enumeration {
     val PostOrder = Value(3)
 }
 
-object BstVisualizer {
+object BinarySearchTreeTest {
+    
+    def Test1() = {
+        
+        val tree = new Bst[Int, Char]()
+        for (v <- sampleValues)
+            tree.put(v, v.toChar)
+        
+        println(tree.values(TraversMode.InOrder).foldRight("")((c: Char, s: String) => s"$c $s"))
+        println(tree.values(TraversMode.PreOrder).foldRight("")((c: Char, s: String) => s"$c $s"))
+        println(tree.values(TraversMode.PostOrder).foldRight("")((c: Char, s: String) => s"$c $s"))
+        
+    }
+    
+    def Test(): Unit = {
+        val t = new Bst[Int, Char]()
+        t.put(5, 'E')
+        println(t.size)
+        print(t)
+        t.put(1, 'A')
+        println(t.size)
+        print(t)
+        t.put(10, 'I')
+        println(t.size)
+        print(t)
+    }
+    
+    private def sampleValues: Array[Int] = {
+        val array = new Array[Int](26)
+        for (i <- 0 until 26)
+            array(i) = i + 65
+        sorting.Sorting.shuffle(array)
+        array
+    }
+    
     def print[Key, Value](bst: Bst[Key, Value]): Unit = {
         val values = bst.values(TraversMode.InOrder)
         println(values.foldRight("")((v,s) => s"$v $s"))
