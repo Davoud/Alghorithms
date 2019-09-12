@@ -207,7 +207,7 @@ object BinarySearchTreeTest {
         
     }
     
-    def Test(): Unit = {
+    def Test2(): Unit = {
         val t = new Bst[Int, Char]()
         t.put(5, 'E')
         println(t.size)
@@ -218,6 +218,17 @@ object BinarySearchTreeTest {
         t.put(10, 'I')
         println(t.size)
         print(t)
+    }
+    
+    def Test(): Unit = {
+        val tree = new Bst[Int, Char]()
+        val visualizer = new TreeVisualizer(tree)
+        for (i <- 1 to 10) {
+            println(i)
+            visualizer.print(i)
+            println()
+        }
+        
     }
     
     private def sampleValues: Array[Int] = {
@@ -233,15 +244,33 @@ object BinarySearchTreeTest {
         println(values.foldRight("")((v,s) => s"$v $s"))
     }
     
-    private def pad[Value](value: Value, len: Int): String = {
-        val str = value.toString
-        val pad = spaces((len - str.length) / 2)
-        s"$pad$str$pad"
+    
+}
+
+class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
+    
+    def print(depth: Int): Unit = {
+        
+        var levelSize = 1
+        var padLen = Math.pow(2, depth) - 1
+        while (padLen >= 1) {
+            val line: StringBuilder = new StringBuilder
+            for (_ <- 1 to levelSize)
+                line.append(pad("X", padLen.toInt)).append(" ")
+            println(line)
+            levelSize *= 2
+            padLen /= 2
+        }
+    }
+    
+    private def pad(value: String, len: Int): String = {
+        val pad = spaces((len - value.length) / 2)
+        s"$pad$value$pad"
     }
     
     private def spaces(len: Int): String = {
         var str = ""
-        for(_ <- 0 until len)
+        for (_ <- 0 until len)
             str += " "
         str
     }

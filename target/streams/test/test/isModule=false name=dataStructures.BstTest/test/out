@@ -1,0 +1,10 @@
+[info] BstTest:
+[info] Bst
+[info] - should iterate as ABC
+[info] - should get values correctly
+[info] - should have a 0 size when empty
+[info] - should get all values correctly
+[info] Bst min
+[info] - should be A
+[info] Bst max
+[info] - should be Z

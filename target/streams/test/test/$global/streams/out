@@ -1,16 +1,18 @@
-[debug] Running TaskDef(dataStructures.QueueTest, org.scalatest.tools.Framework$$anon$1@6a773c81, false, [SuiteSelector])
-[debug] Running TaskDef(sliderPuzzle.BoardTest, org.scalatest.tools.Framework$$anon$1@6a773c81, false, [SuiteSelector])
-[debug] Running TaskDef(PercolationTest, org.scalatest.tools.Framework$$anon$1@6a773c81, false, [SuiteSelector])
-[debug] Running TaskDef(dataStructures.StackTest, org.scalatest.tools.Framework$$anon$1@6a773c81, false, [SuiteSelector])
-[debug] Running TaskDef(percolation.ConnectionManagerTest, org.scalatest.tools.Framework$$anon$1@6a773c81, false, [SuiteSelector])
-[info] Run completed in 343 milliseconds.
-[info] Total number of tests run: 23
-[info] Suites: completed 5, aborted 0
-[info] Tests: succeeded 23, failed 0, canceled 0, ignored 0, pending 0
+[debug] Running TaskDef(dataStructures.StackTest, org.scalatest.tools.Framework$$anon$1@34c7535f, false, [SuiteSelector])
+[debug] Running TaskDef(sliderPuzzle.BoardTest, org.scalatest.tools.Framework$$anon$1@34c7535f, false, [SuiteSelector])
+[debug] Running TaskDef(percolation.ConnectionManagerTest, org.scalatest.tools.Framework$$anon$1@34c7535f, false, [SuiteSelector])
+[debug] Running TaskDef(PercolationTest, org.scalatest.tools.Framework$$anon$1@34c7535f, false, [SuiteSelector])
+[debug] Running TaskDef(dataStructures.BstTest, org.scalatest.tools.Framework$$anon$1@34c7535f, false, [SuiteSelector])
+[debug] Running TaskDef(dataStructures.QueueTest, org.scalatest.tools.Framework$$anon$1@34c7535f, false, [SuiteSelector])
+[info] Run completed in 624 milliseconds.
+[info] Total number of tests run: 29
+[info] Suites: completed 6, aborted 0
+[info] Tests: succeeded 29, failed 0, canceled 0, ignored 0, pending 0
 [info] All tests passed.
 [debug] Passed tests:
 [debug] 	PercolationTest
 [debug] 	dataStructures.QueueTest
+[debug] 	dataStructures.BstTest
 [debug] 	percolation.ConnectionManagerTest
 [debug] 	dataStructures.StackTest
 [debug] 	sliderPuzzle.BoardTest
