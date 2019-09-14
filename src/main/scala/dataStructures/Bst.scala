@@ -1,5 +1,8 @@
 package dataStructures
 
+import scala.collection.mutable
+import scala.collection.mutable.Map
+
 
 
 class Bst[Key, Value](implicit ordering: Ordering[Key]){
@@ -31,16 +34,21 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
     def size: Int = size(root)
     
     def get(key: Key): Option[Value] = {
+        val node = getNode(key)
+        if (node.isDefined) Some(node.get.value) else None
+    }
+    
+    private def getNode(key: Key): Option[Node] = {
         var x: Option[Node] = root
-        while(x.isDefined) {
+        while (x.isDefined) {
             val cmp = ordering.compare(key, x.get.key)
             if (cmp < 0) x = x.get.left
             else if (cmp > 0) x = x.get.right
-            else return Some(x.get.value)
+            else return x
         }
-        return None
+        None
     }
-
+    
     def min(): Option[Value] = if(root.isEmpty) None else Some(min(root.get).value)
     
     private def min(x: Node): Node = {
@@ -183,15 +191,84 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
          var right: Option[Node] = None,
          var count: Int = 0)
     
+    type NodesInfo = mutable.Map[(Int, Int), NodeInfo]
     
+    def nodes(key: Option[Key] = None): NodesInfo = {
+        val map: NodesInfo = mutable.Map()
+        
+        if (key.isDefined) {
+            val node = getNode(key.get)
+            if (node.isDefined)
+                fill(map, 0, "0", node)
+        }
+        else
+            fill(map, 0, "0", root)
+        
+        map
+    }
+    
+    def depth(key: Option[Key] = None): Int = {
+        if (key.isDefined) {
+            val node = getNode(key.get)
+            if (node.isDefined)
+                node.get.count
+            else
+                0
+        }
+        else if (root.isDefined)
+            root.get.count
+        else
+            0
+    }
+    
+    //    private def depth(node: Option[Node], d: Int): Int = {
+    //        if(node.isEmpty) return d
+    //
+    //        var left = -1
+    //        var right = -1
+    //
+    //        if(node.get.left.isDefined)
+    //            left = node.get.left.get.count
+    //
+    //        if(node.get.right.isDefined)
+    //            right = node.get.right.get.count
+    //
+    //        if(left == -1 && right == -1)
+    //            return d + 1
+    //
+    //        if(left > right)
+    //            depth(node.get.left, d + 1)
+    //        else if(left >= right)
+    //            depth(node.get.right, d + 1)
+    //        else
+    //            d
+    //
+    //    }
+    
+    private def fill(map: NodesInfo, level: Int, identifier: String, node: Option[Node]): Unit = {
+        if (node.isEmpty) return
+        
+        val n = node.get
+        
+        map((level, Integer.parseInt(identifier, 2))) = NodeInfo(n.value.toString, n.left.isDefined, n.right.isDefined)
+        
+        if (n.left.isDefined)
+            fill(map, level + 1, identifier + "0", n.left)
+        
+        if (n.right.isDefined)
+            fill(map, level + 1, identifier + "1", n.right)
+    }
     
 }
+
 
 object TraversMode extends Enumeration {
     val InOrder = Value(1)
     val PreOrder = Value(2)
     val PostOrder = Value(3)
 }
+
+case class NodeInfo(value: String, hasLeftChild: Boolean, hasRightChild: Boolean, IsRed: Boolean = false)
 
 object BinarySearchTreeTest {
     
@@ -220,20 +297,44 @@ object BinarySearchTreeTest {
         print(t)
     }
     
-    def Test(): Unit = {
+    def Test3(): Unit = {
         val tree = new Bst[Int, Char]()
         val visualizer = new TreeVisualizer(tree)
         for (i <- 1 to 10) {
             println(i)
-            visualizer.print(i)
+            visualizer.print()
             println()
         }
+    }
+    
+    def Test(): Unit = {
+        val tree = new Bst[Int, Char]()
         
+        //        tree.put(4, 'D')
+        //        tree.put(2, 'B')
+        //        tree.put(6, 'F')
+        //        tree.put(1, 'A')
+        //        tree.put(3, 'C')
+        //        tree.put(5, 'E')
+        //        tree.put(7, 'G')
+        //        tree.put(8, 'H')
+        //        tree.put(9, 'I')
+        
+        
+        for (v <- sampleValues)
+            tree.put(v, v.toChar)
+        
+        val nodes = tree.nodes()
+        for (n <- nodes)
+            println(s"${n._1} = ${n._2.value}")
+        
+        val vis = new TreeVisualizer(tree)
+        vis.print()
     }
     
     private def sampleValues: Array[Int] = {
-        val array = new Array[Int](26)
-        for (i <- 0 until 26)
+        val array = new Array[Int](7)
+        for (i <- 0 until 7)
             array(i) = i + 65
         sorting.Sorting.shuffle(array)
         array
@@ -249,17 +350,24 @@ object BinarySearchTreeTest {
 
 class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
     
-    def print(depth: Int): Unit = {
+    def print(): Unit = {
         
         var levelSize = 1
-        var padLen = Math.pow(2, depth) - 1
+        var level = 0
+        var padLen = Math.pow(2, tree.depth()) - 1
+        val nodes = tree.nodes()
+        
         while (padLen >= 1) {
             val line: StringBuilder = new StringBuilder
-            for (_ <- 1 to levelSize)
-                line.append(pad("X", padLen.toInt)).append(" ")
+            for (i <- 0 until levelSize) {
+                val node = nodes.get((level, i))
+                val value = if (node.isDefined) node.get.value else " "
+                line.append(pad(value, padLen.toInt)).append(" ")
+            }
             println(line)
             levelSize *= 2
             padLen /= 2
+            level += 1
         }
     }
     
