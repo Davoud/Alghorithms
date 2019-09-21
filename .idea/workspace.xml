@@ -7,11 +7,9 @@
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst$Node$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst$Node$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/TraversMode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/TraversMode$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms$sources/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms$sources/1.0/resolved.xml.properties" afterDir="false" />
@@ -27,7 +25,6 @@
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-scala-tool.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-algorithms$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/dataStructures/BstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/dataStructures/BstTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -92,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="365" column="69" selection-start-line="365" selection-start-column="69" selection-end-line="365" selection-end-column="69" />
+            <state relative-caret-position="262">
+              <caret line="306" column="30" selection-start-line="306" selection-start-column="30" selection-end-line="306" selection-end-column="30" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -116,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/dataStructures/BstTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+            <state relative-caret-position="649">
+              <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -129,6 +126,7 @@
       <find>test(</find>
       <find>ignore(</find>
       <find>x.get</find>
+      <find>nodeinfo</find>
     </findStrings>
     <replaceStrings>
       <replace>ignore(</replace>
@@ -187,7 +185,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="60" />
     <option name="y" value="20" />
     <option name="width" value="1750" />
@@ -201,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -272,7 +271,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -548,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568318963090</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Completed TreeVisualizer (pass 1)">
+      <created>1568483271388</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1568483271388</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -561,9 +566,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.20117188" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5012285" side_tool="true" weight="0.20117188" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3287037" />
+      <window_info anchor="bottom" auto_hide="true" x="25" y="166" width="1451" height="564" id="Run" order="2" sideWeight="0.49934897" type="FLOATING" weight="0.44840294" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39680588" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32996207" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49934897" weight="0.3179973" />
+      <window_info anchor="bottom" x="109" y="146" width="1200" height="509" id="sbt-shell-toolwindow" order="8" type="WINDOWED" weight="0.23603351" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32678133" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.37592137" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32869786" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" weight="0.34889436" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24934895" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="sbt" order="5" weight="0.3294271" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.3295302" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.20117188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
       <window_info id="Designer" order="2" />
@@ -583,39 +620,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32678133" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.37592137" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32869786" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" weight="0.3504736" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24934895" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="sbt" order="5" weight="0.3294271" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" weight="0.3295302" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.20117188" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.5012285" side_tool="true" weight="0.20117188" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" sideWeight="0.49934897" weight="0.3746929" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3980344" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32996207" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49934897" weight="0.3179973" />
-      <window_info anchor="bottom" x="109" y="146" width="1200" height="509" id="sbt-shell-toolwindow" order="8" type="WINDOWED" weight="0.23603351" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32746956" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.37618405" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32869786" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" weight="0.35257986" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" weight="0.35012284" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24934895" />
@@ -653,7 +658,8 @@
     <MESSAGE value="Added method body to BST" />
     <MESSAGE value="Added some test for BST" />
     <MESSAGE value="Added TreeVisualizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TreeVisualizer" />
+    <MESSAGE value="Completed TreeVisualizer (pass 1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed TreeVisualizer (pass 1)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1024,13 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4368">
@@ -1043,15 +1042,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/dataStructures/BstTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        <state relative-caret-position="649">
+          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="365" column="69" selection-start-line="365" selection-start-column="69" selection-end-line="365" selection-end-column="69" />
+        <state relative-caret-position="262">
+          <caret line="306" column="30" selection-start-line="306" selection-start-column="30" selection-end-line="306" selection-end-column="30" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />
           </folding>

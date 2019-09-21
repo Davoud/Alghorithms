@@ -221,36 +221,15 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
             0
     }
     
-    //    private def depth(node: Option[Node], d: Int): Int = {
-    //        if(node.isEmpty) return d
-    //
-    //        var left = -1
-    //        var right = -1
-    //
-    //        if(node.get.left.isDefined)
-    //            left = node.get.left.get.count
-    //
-    //        if(node.get.right.isDefined)
-    //            right = node.get.right.get.count
-    //
-    //        if(left == -1 && right == -1)
-    //            return d + 1
-    //
-    //        if(left > right)
-    //            depth(node.get.left, d + 1)
-    //        else if(left >= right)
-    //            depth(node.get.right, d + 1)
-    //        else
-    //            d
-    //
-    //    }
     
     private def fill(map: NodesInfo, level: Int, identifier: String, node: Option[Node]): Unit = {
         if (node.isEmpty) return
         
         val n = node.get
         
-        map((level, Integer.parseInt(identifier, 2))) = NodeInfo(n.value.toString, n.left.isDefined, n.right.isDefined)
+        map((level, Integer.parseInt(identifier, 2))) = NodeInfo(n.value.toString,
+            childInfo(n.left),
+            childInfo(n.right))
         
         if (n.left.isDefined)
             fill(map, level + 1, identifier + "0", n.left)
@@ -259,7 +238,15 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
             fill(map, level + 1, identifier + "1", n.right)
     }
     
+    private def childInfo(node: Option[Node]): ChildInfo.Value = {
+        if (node.isEmpty)
+            ChildInfo.None
+        else
+            ChildInfo.Black
+        
+    }
 }
+
 
 
 object TraversMode extends Enumeration {
@@ -268,7 +255,13 @@ object TraversMode extends Enumeration {
     val PostOrder = Value(3)
 }
 
-case class NodeInfo(value: String, hasLeftChild: Boolean, hasRightChild: Boolean, IsRed: Boolean = false)
+object ChildInfo extends Enumeration {
+    val None = Value(0)
+    val Black = Value(1)
+    val Red = Value(2)
+}
+
+case class NodeInfo(value: String, left: ChildInfo.Value = ChildInfo.None, right: ChildInfo.Value = ChildInfo.None)
 
 object BinarySearchTreeTest {
     
@@ -308,34 +301,30 @@ object BinarySearchTreeTest {
     }
     
     def Test(): Unit = {
-        val tree = new Bst[Int, Char]()
-        
-        //        tree.put(4, 'D')
-        //        tree.put(2, 'B')
-        //        tree.put(6, 'F')
-        //        tree.put(1, 'A')
-        //        tree.put(3, 'C')
-        //        tree.put(5, 'E')
-        //        tree.put(7, 'G')
-        //        tree.put(8, 'H')
-        //        tree.put(9, 'I')
-        
-        
-        for (v <- sampleValues)
-            tree.put(v, v.toChar)
-        
-        val nodes = tree.nodes()
-        for (n <- nodes)
-            println(s"${n._1} = ${n._2.value}")
+        val tree = new Bst[Char, Char]()
+    
+        var s = sampleChars(9)
+        for (v <- s)
+            tree.put(v, v)
         
         val vis = new TreeVisualizer(tree)
         vis.print()
     }
     
     private def sampleValues: Array[Int] = {
-        val array = new Array[Int](7)
+        val array = new Array[Int](10)
         for (i <- 0 until 7)
             array(i) = i + 65
+        sorting.Sorting.shuffle(array)
+        array
+    }
+    
+    private def sampleChars(length: Int = 7): Array[Char] = {
+        val array = new Array[Char](length)
+        var cc = 'A'
+        for (i <- 0 until length) {
+            array(i) = (cc + i).toChar
+        }
         sorting.Sorting.shuffle(array)
         array
     }
@@ -371,15 +360,39 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
         }
     }
     
+    
     private def pad(value: String, len: Int): String = {
-        val pad = spaces((len - value.length) / 2)
-        s"$pad$value$pad"
+        var halfLength = (len - value.length) / 2
+        
+        val padLeft = spacesLeft(halfLength)
+        val padRight = spacesRight(halfLength)
+        s"$padLeft$value$padRight"
     }
     
-    private def spaces(len: Int): String = {
-        var str = ""
-        for (_ <- 0 until len)
-            str += " "
-        str
+    def spacesRight(halfLength: Int): String = {
+        
+        if (halfLength == 0) return ""
+        
+        val h = halfLength / 2
+        val str = new mutable.StringBuilder()
+        for (_ <- 0 until h)
+            str.append("-")
+        for (_ <- 0 until h + 1)
+            str.append(" ")
+        str.toString()
+    }
+    
+    private def spacesLeft(halfLength: Int): String = {
+        
+        if (halfLength == 0) return ""
+        
+        val h = halfLength / 2
+        
+        val str = new mutable.StringBuilder()
+        for (_ <- 0 until h + 1)
+            str.append(" ")
+        for (_ <- 0 until h)
+            str.append("-")
+        str.toString()
     }
 }
