@@ -301,14 +301,17 @@ object BinarySearchTreeTest {
     }
     
     def Test(): Unit = {
-        val tree = new Bst[Char, Char]()
     
-        var s = sampleChars(9)
-        for (v <- s)
-            tree.put(v, v)
+        for (i <- 1 to 9) {
+            val tree = new Bst[Char, Char]()
         
-        val vis = new TreeVisualizer(tree)
-        vis.print()
+            for (v <- sampleChars(i))
+                tree.put(v, v)
+        
+            val vis = new TreeVisualizer(tree)
+            vis.print()
+            println()
+        }
     }
     
     private def sampleValues: Array[Int] = {
@@ -339,9 +342,9 @@ object BinarySearchTreeTest {
 
 class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
     
-    val dash: Char = '_'
-    val leftCorner: Char = ' '
-    val rightCorner: Char = ' '
+    val dash: Char = '\u2500'
+    val leftCorner: Char = '\u250C'
+    val rightCorner: Char = '\u2510'
     def print(): Unit = {
         
         var levelSize = 1
@@ -353,8 +356,10 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
             val line: StringBuilder = new StringBuilder
             for (i <- 0 until levelSize) {
                 val node = nodes.get((level, i))
-                val value = if (node.isDefined) node.get.value else " "
-                line.append(pad(value, padLen.toInt)).append(" ")
+                if (node.isDefined)
+                    line.append(pad(node.get.value, padLen.toInt, node.get.left, node.get.right)).append(" ")
+                else
+                    line.append(pad(" ", padLen.toInt, ChildInfo.None, ChildInfo.None)).append(" ")
             }
             println(line)
             levelSize *= 2
@@ -364,17 +369,30 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
     }
     
     
-    private def pad(value: String, len: Int): String = {
+    def spaces(len: Int): String = {
+        val s = new mutable.StringBuilder()
+        for (_ <- 0 until len)
+            s.append(" ")
+        s.toString()
+    }
+    
+    private def pad(value: String, len: Int, left: ChildInfo.Value, right: ChildInfo.Value): String = {
+        if (value == " ")
+            return spaces(len)
+        
         var halfLength = (len - value.length) / 2
         
-        val padLeft = spacesLeft(halfLength)
-        val padRight = spacesRight(halfLength)
+        val padLeft = spacesLeft(halfLength, left)
+        val padRight = spacesRight(halfLength, right)
         s"$padLeft$value$padRight"
     }
     
-    def spacesRight(halfLength: Int): String = {
+    def spacesRight(halfLength: Int, child: ChildInfo.Value): String = {
         
         if (halfLength == 0) return ""
+        
+        if (child == ChildInfo.None)
+            return spaces(halfLength)
         
         val h = halfLength / 2
         val str = new mutable.StringBuilder()
@@ -384,9 +402,12 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
         str.toString()
     }
     
-    private def spacesLeft(halfLength: Int): String = {
+    private def spacesLeft(halfLength: Int, child: ChildInfo.Value): String = {
         
         if (halfLength == 0) return ""
+        
+        if (child == ChildInfo.None)
+            return spaces(halfLength)
         
         val h = halfLength / 2
         

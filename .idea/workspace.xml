@@ -5,11 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$580fd1b6d4e68b4934fe$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$580fd1b6d4e68b4934fe.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$580fd1b6d4e68b4934fe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$598159669b404d6b7ee7$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$598159669b404d6b7ee7.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$598159669b404d6b7ee7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$6254609e522ed35479f3$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$6254609e522ed35479f3.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$6254609e522ed35479f3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$8d15165c152489a910fd$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$8d15165c152489a910fd.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$8d15165c152489a910fd.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$a9743173b232a32f79ca$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$a9743173b232a32f79ca.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$a9743173b232a32f79ca.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$afbd9c9245318ce28026$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$afbd9c9245318ce28026.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$afbd9c9245318ce28026.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$b9f5630ea6ad01021d9c$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$b9f5630ea6ad01021d9c.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$b9f5630ea6ad01021d9c.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$e1d2cfdd5d60189b70bb$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$e1d2cfdd5d60189b70bb.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$e1d2cfdd5d60189b70bb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/ChildInfo$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/ChildInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/NodeInfo$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/NodeInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/TreeVisualizer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/BinarySearchTreeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/Bst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/TraversMode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dataStructures/TraversMode$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms$sources/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ch.epfl.scala/algorithms$sources/1.0/resolved.xml.properties" afterDir="false" />
@@ -89,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="306" column="30" selection-start-line="306" selection-start-column="30" selection-end-line="306" selection-end-column="30" />
+            <state relative-caret-position="103">
+              <caret line="304" column="24" selection-start-line="304" selection-start-column="24" selection-end-line="304" selection-end-column="24" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -113,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/dataStructures/BstTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
+            <state relative-caret-position="840">
               <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
             </state>
           </provider>
@@ -185,7 +212,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="60" />
     <option name="y" value="20" />
     <option name="width" value="1750" />
@@ -200,7 +227,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,6 +297,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -553,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568483271388</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Completed TreeVisualizer (pass 2)">
+      <created>1569090797000</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1569090797000</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -566,7 +600,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.20117188" />
@@ -578,7 +612,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3287037" />
-      <window_info anchor="bottom" auto_hide="true" x="25" y="166" width="1451" height="564" id="Run" order="2" sideWeight="0.49934897" type="FLOATING" weight="0.44840294" />
+      <window_info anchor="bottom" auto_hide="true" x="54" y="130" width="1451" height="564" id="Run" order="2" sideWeight="0.49934897" type="FLOATING" weight="0.44840294" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39680588" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,7 +622,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32678133" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.37592137" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32869786" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" weight="0.34889436" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49934897" weight="0.34776726" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24934895" />
@@ -659,7 +693,8 @@
     <MESSAGE value="Added some test for BST" />
     <MESSAGE value="Added TreeVisualizer" />
     <MESSAGE value="Completed TreeVisualizer (pass 1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed TreeVisualizer (pass 1)" />
+    <MESSAGE value="Completed TreeVisualizer (pass 2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed TreeVisualizer (pass 2)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1030,6 +1065,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sorting/Sorting.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4368">
@@ -1042,22 +1084,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/dataStructures/BstTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
+        <state relative-caret-position="840">
           <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataStructures/Bst.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="306" column="30" selection-start-line="306" selection-start-column="30" selection-end-line="306" selection-end-column="30" />
+        <state relative-caret-position="103">
+          <caret line="304" column="24" selection-start-line="304" selection-start-column="24" selection-end-line="304" selection-end-column="24" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />
           </folding>
