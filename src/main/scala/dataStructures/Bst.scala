@@ -339,6 +339,9 @@ object BinarySearchTreeTest {
 
 class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
     
+    val dash: Char = '_'
+    val leftCorner: Char = ' '
+    val rightCorner: Char = ' '
     def print(): Unit = {
         
         var levelSize = 1
@@ -375,10 +378,9 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
         
         val h = halfLength / 2
         val str = new mutable.StringBuilder()
-        for (_ <- 0 until h)
-            str.append("-")
-        for (_ <- 0 until h + 1)
-            str.append(" ")
+        for (_ <- 0 until h) str.append(dash)
+        str.append(rightCorner)
+        for (_ <- 0 until h) str.append(" ")
         str.toString()
     }
     
@@ -389,10 +391,9 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
         val h = halfLength / 2
         
         val str = new mutable.StringBuilder()
-        for (_ <- 0 until h + 1)
-            str.append(" ")
-        for (_ <- 0 until h)
-            str.append("-")
+        for (_ <- 0 until h) str.append(" ")
+        str.append(leftCorner)
+        for (_ <- 0 until h) str.append(dash)
         str.toString()
     }
 }
