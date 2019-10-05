@@ -1,10 +1,11 @@
 package dataStructures
 
+import dataStructures.stacks.{LinkedListStack, Stack}
 import org.scalatest.FunSuite
 
 class StackTest extends FunSuite{
-
-  def GetEmptyStack[T](): Stack[T] = new LinkListStack[T]()
+  
+  def GetEmptyStack[T](): Stack[T] = new LinkedListStack[T]()
 
   test("Push, Push, Push, Pop, Pop, Pop") {
     val s = GetEmptyStack[Int]

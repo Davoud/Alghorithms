@@ -1,5 +1,6 @@
 package dataStructures
 
+import dataStructures.queues.{ArrayQueue, Queue}
 import org.scalatest.{FlatSpec, Matchers}
 
 class QueueTest extends FlatSpec with Matchers {

@@ -1,5 +1,8 @@
 package dataStructures
 
+import dataStructures.queues.Queue
+import dataStructures.stacks.{ArrayListStack, LinkedListStack, Stack}
+
 class QueueWithStacks[A: Manifest] extends Queue[A] {
 
   private val input: ArrayListStack[A] = new ArrayListStack[A](4)
@@ -23,8 +26,8 @@ class QueueWithStacks[A: Manifest] extends Queue[A] {
 }
 
 class StackWithMax extends Stack[Double] {
-
-  private def stack: LinkListStack[Double] = new LinkListStack[Double]()
+  
+  private def stack: LinkedListStack[Double] = new LinkedListStack[Double]()
 
   private var max: Double = Double.MinValue
 

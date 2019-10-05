@@ -1,6 +1,6 @@
-import dataStructures.BinarySearchTreeTest
+import dataStructures.trees.{BSTTest}
 
 object Main extends App {
-	BinarySearchTreeTest.Test()
+	BSTTest.Test()
 }
 

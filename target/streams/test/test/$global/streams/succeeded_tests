@@ -1,9 +1,9 @@
 #Successful Tests
-#Thu Sep 12 01:01:07 IRDT 2019
-dataStructures.QueueTest=1568233867877
-dataStructures.BstTest=1568233867945
-PercolationTest=1568233867844
-percolation.ConnectionManagerTest=1568233867878
-sliderPuzzle.BoardTest=1568233867897
-dataStructures.StackTest=1568233867843
+#Sat Oct 05 22:42:27 IRST 2019
+dataStructures.QueueTest=1570302747281
+dataStructures.BstTest=1570302747304
+PercolationTest=1570302747274
+percolation.ConnectionManagerTest=1570302747353
+sliderPuzzle.BoardTest=1570302747298
+dataStructures.StackTest=1570302747274
 percolation.PercolationTest=1558982933262

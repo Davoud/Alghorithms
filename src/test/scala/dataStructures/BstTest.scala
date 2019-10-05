@@ -1,5 +1,6 @@
 package dataStructures
 
+import dataStructures.trees.Bst
 import org.scalatest.{FlatSpec, Matchers}
 
 class BstTest extends FlatSpec with Matchers {
