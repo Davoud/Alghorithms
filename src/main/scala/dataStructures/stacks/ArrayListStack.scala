@@ -4,14 +4,14 @@ class ArrayListStack[T: Manifest](initalCapacity: Int) extends Stack[T] {
 	private var s = new Array[T](initalCapacity)
 	private var N: Int = 0
 	
-	def isEmpty: Boolean = N == 0
+	override def isEmpty: Boolean = N == 0
 	
 	def pop(): T = {
 		N -= 1
-		var item = s(N)
+		val item = s(N)
 		s(N) == null
 		if (N > 0 && N == s.length / 4) resize(s.length / 2)
-		return item
+		item
 	}
 	
 	def push(item: T): Unit = {
@@ -20,10 +20,16 @@ class ArrayListStack[T: Manifest](initalCapacity: Int) extends Stack[T] {
 		s(N) = item
 	}
 	
+	override def top(): T = s(N - 1)
+	
 	private def resize(length: Int): Unit = {
-		var copy = new Array[T](length)
-		for (i <- 0 until s.length)
+		val copy = new Array[T](length)
+		for (i <- s.indices)
 			copy(i) = s(i)
 		s = copy
 	}
+	
+	override def iterator: Iterator[T] = s.iterator
+	
+	
 }

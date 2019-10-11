@@ -45,10 +45,13 @@ class StackWithMax extends Stack[Double] {
   }
 
   private def findMax(): Unit = ???
-
+  
+  override def top: Double = stack.top
 
   override def isEmpty: Boolean = stack.isEmpty
 
   def Maximum: Double = max
+  
+  override def iterator: Iterator[Double] = stack.iterator
 }
 

@@ -1,6 +1,9 @@
 package dataStructures.trees
 
+import dataStructures.stacks.{ArrayListStack, LinkedListStack}
+
 import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
 
 
 class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
@@ -9,12 +12,19 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 	val leftCorner: Char = '\u250C'
 	val rightCorner: Char = '\u2510'
 	
-	def print(): Unit = {
-		
+	def print: Unit = {
+		for (line <- lines)
+			println(line)
+	}
+	
+	def lines: Iterable[String] = buildTreeImage.compactedImage
+	
+	private def buildTreeImage: TreeImage = {
 		var levelSize = 1
 		var level = 0
 		var padLen = Math.pow(2, tree.depth()) - 1
 		val nodes = tree.nodes()
+		val treeImage = new TreeImage()
 		
 		while (padLen >= 1) {
 			val line: StringBuilder = new StringBuilder
@@ -25,13 +35,14 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 				else
 					line.append(pad(" ", padLen.toInt, ChildInfo.None, ChildInfo.None)).append(" ")
 			}
-			println(line)
+			treeImage.add(line.toString())
 			levelSize *= 2
 			padLen /= 2
 			level += 1
 		}
+		
+		treeImage
 	}
-	
 	
 	def spaces(len: Int): String = {
 		val s = new mutable.StringBuilder()
@@ -80,5 +91,52 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 		str.append(leftCorner)
 		for (_ <- 0 until h) str.append(dash)
 		str.toString()
+	}
+	
+	class TreeImage {
+		
+		private val _lines = new ListBuffer[String]()
+		
+		def add(line: String): Unit = _lines.append(line)
+		
+		def lines: Iterable[String] = _lines.toList
+		
+		def maxLength(lines: Iterable[String]): Int = {
+			var max = 0
+			for (line <- lines)
+				if (line.length > max)
+					max = line.length
+			max
+		}
+		
+		def compactedImage: Iterable[String] = {
+			val width = maxLength(_lines)
+			val stack = new LinkedListStack[String]
+			
+			for (i <- 0 until width) {
+				val col = getColumn(i)
+				if (stack.isEmpty || stack.top != col)
+					stack.push(col)
+			}
+			
+			val compWidth = maxLength(stack)
+			val compImage = new ListBuffer[StringBuilder]
+			for (_ <- 0 until compWidth)
+				compImage.append(new StringBuilder)
+			
+			for (item <- stack) {
+				for (i <- 0 until item.length)
+					compImage(i).append(item(i))
+			}
+			
+			compImage.map(s => s.toString()).filter(i => !i.isBlank)
+		}
+		
+		private def getColumn(index: Int): String = {
+			val col = new StringBuilder()
+			for (line <- _lines)
+				col.append(line(index))
+			col.toString()
+		}
 	}
 }
