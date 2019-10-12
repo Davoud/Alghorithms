@@ -13,11 +13,20 @@ class BstTest extends FlatSpec with Matchers {
 		array
 	}
 	
-	private def sampleTree(): Bst[Int, Char] = {
+	private def sampleTree(len: Int = 26, gap: Int = 1): Bst[Int, Char] = {
 		val tree = new Bst[Int, Char]()
-		for (v <- sampleValues)
-			tree.put(v, v.toChar)
+		for (v <- sampleChars(len, gap))
+			tree.put(v, v)
 		tree
+	}
+	
+	private def sampleChars(length: Int = 26, gap: Int = 1): Array[Char] = {
+		val list = new scala.collection.mutable.ListBuffer[Char]
+		val cc = 'A'
+		(0 until length by gap).foreach(i => list += (cc + i).toChar)
+		val array = list.toArray
+		sorting.Sorting.shuffle(array)
+		array
 	}
 	
 	"Bst" should "iterate as ABC" in {
@@ -47,14 +56,13 @@ class BstTest extends FlatSpec with Matchers {
 	
 	it should "get all values correctly" in {
 		val t = sampleTree()
-		for (i <- 0 until 26)
-			t.get(i + 65) should be(Some((i + 65).toChar))
+		for (i <- 'A' to 'Z')
+			t.get(i) should be(Some(i))
 	}
 	
 	it should "get None for missing values" in {
 		sampleTree().get(0) should be(None)
 	}
-	
 	
 	"Bst min" should "be A" in {
 		val tree = sampleTree()
@@ -64,6 +72,19 @@ class BstTest extends FlatSpec with Matchers {
 	"Bst max" should "be Z" in {
 		val tree = sampleTree()
 		tree.max() should be(Some('Z'))
+	}
+	
+	"Bst rank of A" should "be 0" in {
+		sampleTree().rank('A') should be(0)
+	}
+	
+	"Bst ranks of A..F" should "be 0..5" in {
+		val tree = sampleTree()
+		var rank = 0
+		for (v <- 'A' to 'F') {
+			tree.rank(v) should be(rank)
+			rank += 1
+		}
 	}
 	
 }

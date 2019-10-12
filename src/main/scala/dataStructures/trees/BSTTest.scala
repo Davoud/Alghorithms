@@ -7,23 +7,22 @@ object BSTTest {
 		
 		for (i <- 26 to 26) {
 			val tree = new Bst[Char, Char]()
+			sampleChars(i, 2).foreach(v => tree.put(v, v))
+			new TreeVisualizer(tree).print
 			
-			for (v <- sampleChars(i))
-				tree.put(v, v)
+			tree.delete('M')
+			new TreeVisualizer(tree).print
 			
-			val vis = new TreeVisualizer(tree)
-			vis.print
-			println()
+			tree.delete('K')
+			new TreeVisualizer(tree).print
 		}
 	}
 	
-	
-	private def sampleChars(length: Int = 7): Array[Char] = {
-		val array = new Array[Char](length)
+	private def sampleChars(length: Int = 26, gap: Int = 1): Array[Char] = {
+		val list = new scala.collection.mutable.ListBuffer[Char]
 		val cc = 'A'
-		for (i <- 0 until length) {
-			array(i) = (cc + i).toChar
-		}
+		(0 until length by gap).foreach(i => list += (cc + i).toChar)
+		val array = list.toArray
 		sorting.Sorting.shuffle(array)
 		array
 	}

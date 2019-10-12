@@ -15,7 +15,7 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
     }
 
     private def put(x: Option[Node], key: Key, value: Value): Option[Node] = {
-        if(x.isEmpty) return Some(Node(key, value))
+	    if (x.isEmpty) return Some(Node(key, value, count = 1))
     
         val node = x.get
         val cmp = ordering.compare(key, node.key)

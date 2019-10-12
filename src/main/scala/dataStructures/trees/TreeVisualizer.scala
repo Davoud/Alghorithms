@@ -17,6 +17,11 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 			println(line)
 	}
 	
+	def printRaw: Unit = {
+		for (line <- buildTreeImage.lines)
+			println(line)
+	}
+	
 	def lines: Iterable[String] = buildTreeImage.compactedImage
 	
 	private def buildTreeImage: TreeImage = {
