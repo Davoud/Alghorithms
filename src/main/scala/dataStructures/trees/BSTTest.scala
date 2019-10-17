@@ -9,12 +9,16 @@ object BSTTest {
 			val tree = new Bst[Char, Char]()
 			sampleChars(i, 2).foreach(v => tree.put(v, v))
 			new TreeVisualizer(tree).print
+			println(tree.size)
+			
 			
 			tree.delete('M')
 			new TreeVisualizer(tree).print
-			
+			println(tree.size)
+
 			tree.delete('K')
 			new TreeVisualizer(tree).print
+			println(tree.size)
 		}
 	}
 	

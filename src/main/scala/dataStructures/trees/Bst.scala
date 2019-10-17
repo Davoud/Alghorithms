@@ -137,7 +137,7 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
             node.left = t.left
         }
         node.count = size(node.left) + size(node.right) + 1
-        x
+        Some(node)
     }
     
     private def deleteMin(x: Node): Option[Node] = {
@@ -146,7 +146,12 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
         x.count = 1 + size(x.left) + size(x.right)
         Some(x)
     }
-	  
+    
+    def deleteMin(): Unit = {
+        root = deleteMin(root.get)
+    }
+    
+    
 	  def keys(traversMode: TraversMode.Value = TraversMode.PreOrder): Iterable[Key] =
         traverse(traversMode).map(node => node.key)
     
