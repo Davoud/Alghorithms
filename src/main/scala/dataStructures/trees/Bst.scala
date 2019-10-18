@@ -5,8 +5,7 @@ import dataStructures.queues.ArrayQueue
 import scala.collection.mutable
 
 
-
-class Bst[Key, Value](implicit ordering: Ordering[Key]){
+class Bst[Key, Value](implicit ordering: Ordering[Key]) extends NodeProvider[Key] {
 
     private var root: Option[Node] = None
     
@@ -197,7 +196,6 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
          var right: Option[Node] = None,
          var count: Int = 0)
     
-    type NodesInfo = mutable.Map[(Int, Int), NodeInfo]
     
     def nodes(key: Option[Key] = None): NodesInfo = {
         val map: NodesInfo = mutable.Map()
@@ -216,15 +214,9 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
     def depth(key: Option[Key] = None): Int = {
         if (key.isDefined) {
             val node = getNode(key.get)
-            if (node.isDefined)
-                node.get.count
-            else
-                0
+            if (node.isDefined) node.get.count else 0
         }
-        else if (root.isDefined)
-            root.get.count
-        else
-            0
+        else if (root.isDefined) root.get.count else 0
     }
     
     
@@ -244,28 +236,19 @@ class Bst[Key, Value](implicit ordering: Ordering[Key]){
             fill(map, level + 1, identifier + "1", n.right)
     }
     
-    private def childInfo(node: Option[Node]): ChildInfo.Value = {
-        if (node.isEmpty)
-            ChildInfo.None
-        else
-            ChildInfo.Black
-        
+    @inline private def childInfo(node: Option[Node]): ChildInfo.Value =
+        if (node.isEmpty) ChildInfo.None else ChildInfo.Black
+    
+    object TraversMode extends Enumeration {
+        val InOrder = Value(1)
+        val PreOrder = Value(2)
+        val PostOrder = Value(3)
     }
 }
 
 
 
-object TraversMode extends Enumeration {
-    val InOrder = Value(1)
-    val PreOrder = Value(2)
-    val PostOrder = Value(3)
-}
 
-object ChildInfo extends Enumeration {
-    val None = Value(0)
-    val Black = Value(1)
-    val Red = Value(2)
-}
 
-case class NodeInfo(value: String, left: ChildInfo.Value = ChildInfo.None, right: ChildInfo.Value = ChildInfo.None)
+
 

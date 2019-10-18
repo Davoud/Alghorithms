@@ -1,16 +1,21 @@
 package dataStructures.trees
 
-import dataStructures.stacks.{ArrayListStack, LinkedListStack}
+import dataStructures.stacks.LinkedListStack
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
 
-class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
+class TreeVisualizer[Key](tree: NodeProvider[Key]) {
 	
-	val dash: Char = '\u2500'
+	val black: Char = '\u2500'
+	var red: Char = '\u2550'
 	val leftCorner: Char = '\u250C'
 	val rightCorner: Char = '\u2510'
+	val leftRedCorner: Char = '\u2552'
+	val rightRedCorner: Char = '\u2555'
+	
+	var space: String = " "
 	
 	def print: Unit = {
 		for (line <- lines)
@@ -36,9 +41,9 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 			for (i <- 0 until levelSize) {
 				val node = nodes.get((level, i))
 				if (node.isDefined)
-					line.append(pad(node.get.value, padLen.toInt, node.get.left, node.get.right)).append(" ")
+					line.append(pad(node.get.value, padLen.toInt, node.get.left, node.get.right)).append(space)
 				else
-					line.append(pad(" ", padLen.toInt, ChildInfo.None, ChildInfo.None)).append(" ")
+					line.append(pad(space, padLen.toInt, ChildInfo.None, ChildInfo.None)).append(space)
 			}
 			treeImage.add(line.toString())
 			levelSize *= 2
@@ -52,15 +57,15 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 	def spaces(len: Int): String = {
 		val s = new mutable.StringBuilder()
 		for (_ <- 0 until len)
-			s.append(" ")
+			s.append(space)
 		s.toString()
 	}
 	
 	private def pad(value: String, len: Int, left: ChildInfo.Value, right: ChildInfo.Value): String = {
-		if (value == " ")
+		if (value == space)
 			return spaces(len)
 		
-		var halfLength = (len - value.length) / 2
+		val halfLength = (len - value.length) / 2
 		
 		val padLeft = spacesLeft(halfLength, left)
 		val padRight = spacesRight(halfLength, right)
@@ -74,11 +79,16 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 		if (child == ChildInfo.None)
 			return spaces(halfLength)
 		
+		val (dash, corner) =
+			if (child == ChildInfo.Red) (red, rightRedCorner)
+			else (black, rightCorner)
+		
+		
 		val h = halfLength / 2
 		val str = new mutable.StringBuilder()
 		for (_ <- 0 until h) str.append(dash)
-		str.append(rightCorner)
-		for (_ <- 0 until h) str.append(" ")
+		str.append(corner)
+		for (_ <- 0 until h) str.append(space)
 		str.toString()
 	}
 	
@@ -91,9 +101,13 @@ class TreeVisualizer[Key, Value](tree: Bst[Key, Value]) {
 		
 		val h = halfLength / 2
 		
+		val (dash, corner) =
+			if (child == ChildInfo.Red) (red, leftRedCorner)
+			else (black, leftCorner)
+		
 		val str = new mutable.StringBuilder()
-		for (_ <- 0 until h) str.append(" ")
-		str.append(leftCorner)
+		for (_ <- 0 until h) str.append(space)
+		str.append(corner)
 		for (_ <- 0 until h) str.append(dash)
 		str.toString()
 	}
