@@ -3,6 +3,11 @@ package dataStructures.trees
 object BSTTest {
 	
 	def Test(): Unit = {
+		TestRedBlack()
+		//TestManualInput()
+	}
+	
+	def TestManualInput(): Unit = {
 		
 		var tree = new RedBlackTree[Char, Char]()
 		
@@ -23,8 +28,8 @@ object BSTTest {
 	
 	def TestRedBlack(): Unit = {
 		val tree = new RedBlackTree[Char, Char]()
-		sampleChars(5, 1).foreach(v => tree.put(v, v))
-		new TreeVisualizer(tree).print
+		sampleChars(25, 1).foreach(v => tree.put(v, v))
+		//new TreeVisualizer(tree).print
 		println(tree.size)
 	}
 	

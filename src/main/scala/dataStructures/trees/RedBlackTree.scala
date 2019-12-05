@@ -74,7 +74,6 @@ class RedBlackTree[Key, Value](implicit ordering: Ordering[Key]) extends NodePro
 	def isRed(node: Option[Node]): Boolean = node.isDefined && node.get.color == NodeColor.Red
 	
 	private def rotateLeft(h: Node): Node = {
-		println(s"rotating left on ${h.key}")
 		val x = h.right.get
 		h.right = x.left
 		x.left = Some(h)
@@ -86,7 +85,6 @@ class RedBlackTree[Key, Value](implicit ordering: Ordering[Key]) extends NodePro
 	}
 	
 	private def rotateRight(h: Node): Node = {
-		println(s"rotating right on ${h.key}")
 		val x = h.left.get
 		h.left = x.right
 		x.right = Some(h)
@@ -98,7 +96,6 @@ class RedBlackTree[Key, Value](implicit ordering: Ordering[Key]) extends NodePro
 	}
 	
 	private def flipColors(h: Node): Unit = {
-		println(s"flipping colors on ${h.key}")
 		h.color = NodeColor.Red
 		h.left.get.color = NodeColor.Black
 		h.right.get.color = NodeColor.Black
@@ -106,6 +103,7 @@ class RedBlackTree[Key, Value](implicit ordering: Ordering[Key]) extends NodePro
 	
 	def put(key: Key, value: Value): Unit = {
 		root = put(root, key, value)
+		root.get.color = NodeColor.Black
 	}
 	
 	private def put(x: Option[Node], key: Key, value: Value): Option[Node] = {
