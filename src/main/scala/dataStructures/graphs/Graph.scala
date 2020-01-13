@@ -1,12 +1,13 @@
 package dataStructures.graphs
 
-trait Graph {
-	def addEdge(v: Int, w: Int): Unit
+trait Graph[Vertex] {
+	def addEdge(v: Vertex, w: Vertex): Unit
 	
-	def adj(v: Int): Iterable[Int]
+	def adj(v: Vertex): Iterable[Vertex]
 	
-	def vertices: Int
+	def vertices: Iterable[Vertex]
 	
 	def edges: Int
+	
 }
 

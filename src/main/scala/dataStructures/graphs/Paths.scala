@@ -1,16 +1,21 @@
 package dataStructures.graphs
 
-import scala.collection.mutable
 
-class Paths(G: Graph, s: Int) {
+import scala.collection.mutable.{ListBuffer, Map}
+
+class Paths[Vertex](G: Graph[Vertex], s: Vertex) {
 	
-	private val marked = Array.fill[Boolean](G.vertices)(false)
-	private val edgeTo = Array.fill[Option[Int]](G.vertices)(None)
+	private val marked = Map[Vertex, Boolean]()
+	private val edgeTo = Map[Vertex, Option[Vertex]]()
+	
+	for (vertex <- G.vertices)
+		marked += vertex -> false
+	
 	depthFirst()
 	
 	private def depthFirst(): Unit = visit(s)
 	
-	private def visit(v: Int): Unit = {
+	private def visit(v: Vertex): Unit = {
 		marked(v) = true
 		for (adj <- G.adj(v))
 			if (!marked(adj)) {
@@ -20,17 +25,17 @@ class Paths(G: Graph, s: Int) {
 		
 	}
 	
-	private def pathTo(v: Int, path: mutable.ListBuffer[Int]): Unit = {
+	private def pathTo(v: Vertex, path: ListBuffer[Vertex]): Unit = {
 		val edge = edgeTo(v).get
 		path += edge
 		if (edge != s)
 			pathTo(edge, path)
 	}
 	
-	def hasPathTo(v: Int): Boolean = marked(v)
+	def hasPathTo(v: Vertex): Boolean = marked(v)
 	
-	def pathTo(v: Int): Iterable[Int] = {
-		val path = mutable.ListBuffer[Int]()
+	def pathTo(v: Vertex): Iterable[Vertex] = {
+		val path = ListBuffer[Vertex]()
 		if (hasPathTo(v)) {
 			path += v
 			pathTo(v, path)
