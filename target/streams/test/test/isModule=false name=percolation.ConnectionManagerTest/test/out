@@ -1,8 +1,0 @@
-[info] ConnectionManagerTest:
-[info] - percolate 1x1 matrix
-[info] - percolatex 2x2 matrix, route 10/10
-[info] - percolate 2x2 matrix, route 01/01
-[info] - not percolate 2x2 diagonal
-[info] - not percolate 2x2 reverse diagonal
-[info] - percolates 3x3 route 100/100/100
-[info] - All connected
