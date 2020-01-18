@@ -11,9 +11,9 @@ class Paths[Vertex](G: Graph[Vertex], s: Vertex) {
 	for (vertex <- G.vertices)
 		marked += vertex -> false
 	
-	depthFirst()
+	depthFirstSearch()
 	
-	private def depthFirst(): Unit = visit(s)
+	private def depthFirstSearch(): Unit = visit(s)
 	
 	private def visit(v: Vertex): Unit = {
 		marked(v) = true

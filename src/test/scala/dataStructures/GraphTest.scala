@@ -1,6 +1,7 @@
 package dataStructures
 
 import dataStructures.graphs.{Digraph, Graph, Paths, SparseGraph}
+
 import org.scalatest.{FlatSpec, Matchers}
 
 object Sampler {
@@ -12,7 +13,24 @@ object Sampler {
 		g
 	}
 	
-	
+	def digraph(): Digraph[Int] = {
+		val g = new Digraph[Int]()
+		g += 1
+		g +=
+			(0 -> 1, 0 -> 5,
+				2 -> 1, 2 -> 3,
+				3 -> 2, 3 -> 5,
+				4 -> 2, 4 -> 3,
+				5 -> 4,
+				6 -> 0, 6 -> 4, 6 -> 8, 6 -> 9,
+				7 -> 6, 6 -> 9,
+				8 -> 6,
+				9 -> 10, 9 -> 11,
+				10 -> 12,
+				11 -> 4, 11 -> 12,
+				12 -> 9)
+		g
+	}
 }
 
 class GraphTest extends FlatSpec with Matchers {
@@ -38,18 +56,32 @@ class PathsTest extends FlatSpec with Matchers {
 	
 	"Paths" should "verify paths from vertex 0 to  vertices 1, 2, 3, 4, 5 and 6" in {
 		val paths = samplePaths()
-		//		for (v <- 1 to 6)
-		//			paths.hasPathTo(v) should be(true)
-		//
-		//		for (v <- 7 to 12)
-		//			paths.hasPathTo(v) should be(false)
+		for (v <- 1 to 6)
+			paths.hasPathTo(v) should be(true)
+		
+		for (v <- 7 to 12)
+			paths.hasPathTo(v) should be(false)
 	}
 	
 	"It" should "reflect the path to 3 as (5,4,6,0)" in {
-		//		samplePaths().pathTo(3).toSeq should be(Seq(3, 5, 0))
+		samplePaths().pathTo(3).toSeq should be(Seq(3, 5, 0))
 	}
 }
 
 class DigraphTest extends FlatSpec with Matchers {
-
+	def sample = Sampler.digraph()
+	
+	"Digraph" should "has 13 vertices" in {
+		sample.vertices.size should be(13)
+	}
+	
+	"It" should "have edges" in {
+		sample.edges should be(22)
+	}
+	
+	"It" should "report all neighbours correctly" in {
+		sample.adj(0).toSet should be(Set(1, 5))
+		//sample.adj(1).toSet should be(Set())
+		sample.adj(2).toSet should be(Set(1, 3))
+	}
 }
