@@ -1,7 +1,7 @@
 package dataStructures.stacks
 
-class ArrayListStack[T: Manifest](initalCapacity: Int) extends Stack[T] {
-	private var s = new Array[T](initalCapacity)
+class ArrayListStack[T: Manifest](initialCapacity: Int) extends Stack[T] {
+	private var s = new Array[T](initialCapacity)
 	private var N: Int = 0
 	
 	override def isEmpty: Boolean = N == 0

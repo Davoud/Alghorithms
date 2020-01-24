@@ -1,7 +1,6 @@
 package dataStructures
 
-import dataStructures.graphs.{Digraph, Graph, Paths, SparseGraph}
-
+import dataStructures.graphs.{BreadthFirstPaths, Digraph, Graph, Paths, SparseGraph, DepthFirstOrder}
 import org.scalatest.{FlatSpec, Matchers}
 
 object Sampler {
@@ -23,7 +22,7 @@ object Sampler {
 				4 -> 2, 4 -> 3,
 				5 -> 4,
 				6 -> 0, 6 -> 4, 6 -> 8, 6 -> 9,
-				7 -> 6, 6 -> 9,
+				7 -> 6, 7 -> 9,
 				8 -> 6,
 				9 -> 10, 9 -> 11,
 				10 -> 12,
@@ -31,6 +30,40 @@ object Sampler {
 				12 -> 9)
 		g
 	}
+	
+	def dag(): Digraph[Int] = {
+		val g = new Digraph[Int]()
+		g += 2
+		g += 4
+		g +=
+			(0 -> 5, 0 -> 2, 0 -> 1,
+				3 -> 6, 3 -> 5, 3 -> 4, 3 -> 2,
+				6 -> 4, 6 -> 0,
+				5 -> 2,
+				3 -> 2,
+				1 -> 4)
+		g
+	}
+	
+}
+
+class DigraphTest extends FlatSpec with Matchers {
+	def sample = Sampler.digraph()
+	
+	"Digraph" should "has 13 vertices" in {
+		sample.vertices.size should be(13)
+	}
+	
+	"It" should "have edges" in {
+		sample.edges should be(22)
+	}
+	
+	"It" should "report all neighbours correctly" in {
+		sample.adj(0).toSet should be(Set(1, 5))
+		sample.adj(1).toSet should be(Set())
+		sample.adj(2).toSet should be(Set(1, 3))
+	}
+	
 }
 
 class GraphTest extends FlatSpec with Matchers {
@@ -68,20 +101,58 @@ class PathsTest extends FlatSpec with Matchers {
 	}
 }
 
-class DigraphTest extends FlatSpec with Matchers {
-	def sample = Sampler.digraph()
+class DigraphPathsTest extends FlatSpec with Matchers {
+	def samplePaths() = new Paths[Int](Sampler.digraph(), 0)
 	
-	"Digraph" should "has 13 vertices" in {
-		sample.vertices.size should be(13)
+	"Reachable vertices form 0 to 2" should "be (5, 4, 3, 2)" in {
+		val path = samplePaths();
+		path.pathTo(2).toSeq should be(Seq(2, 4, 5, 0))
 	}
 	
-	"It" should "have edges" in {
-		sample.edges should be(22)
+	"Reachable vertices from 0" should "be 1, 2, 3, 4, 6" in {
+		var path = samplePaths();
+		for (v <- Seq(1, 2, 3, 4, 5))
+			path.hasPathTo(v) should be(true)
 	}
 	
-	"It" should "report all neighbours correctly" in {
-		sample.adj(0).toSet should be(Set(1, 5))
-		//sample.adj(1).toSet should be(Set())
-		sample.adj(2).toSet should be(Set(1, 3))
+	"Vertices 6 to 12" should "not be reachable form 0" in {
+		var path = samplePaths()
+		for (v <- 6 to 12)
+			path.hasPathTo(v) should be(false)
+	}
+}
+
+class BreadthFirstPathsTest extends FlatSpec with Matchers {
+	def samplePaths() = new BreadthFirstPaths[Int](Sampler.digraph(), 0)
+	
+	def multiPath() = new BreadthFirstPaths[Int](Sampler.digraph(), 1, 7, 10)
+	
+	"Shortest path from 0 to 4" should "be 0 -> 5 -> 4" in {
+		val path = samplePaths()
+		path.shortestPathTo(4).toSeq should be(Seq(0, 5, 4))
+	}
+	
+	"Shortest path from 1, 7, 10 to 4" should "be 7 -> 6 -> 4" in {
+		val path = multiPath()
+		path.shortestPathTo(4).toSeq should be(Seq(7, 6, 4))
+	}
+	
+	"Shortest path from 1, 7, 10 to 5" should "be 7 -> 6 -> 0 -> 5" in {
+		val path = multiPath()
+		path.shortestPathTo(5).toSeq should be(Seq(7, 6, 0, 5))
+	}
+	
+	"Shortest path from 1, 7, 10 to 10" should "be 10 -> 12" in {
+		val path = multiPath()
+		path.shortestPathTo(12).toSeq should be(Seq(10, 12))
+	}
+	
+}
+
+class DepthFirstOrderTest extends FlatSpec with Matchers {
+	"Topological Order of graph" should "be as expected" in {
+		val topologicalSorter = new DepthFirstOrder[Int](Sampler.dag())
+		topologicalSorter.reversePost.toSeq should be(Seq(3, 6, 0, 5, 2, 1, 4))
+		
 	}
 }
