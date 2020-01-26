@@ -2,7 +2,7 @@ package dataStructures.graphs
 
 import scala.collection.mutable.{HashSet, Map}
 
-class Digraph[Vertex] extends Graph[Vertex] {
+class Digraph[Vertex](implicit o: Ordering[Vertex]) extends Graph[Vertex] {
 	
 	private val graph = Map[Vertex, HashSet[Vertex]]()
 	
@@ -24,7 +24,7 @@ class Digraph[Vertex] extends Graph[Vertex] {
 			graph += (vertex -> HashSet[Vertex]())
 	}
 	
-	override def vertices: Iterable[Vertex] = graph.keys
+	override def vertices: Iterable[Vertex] = graph.keys.toList.sorted(o)
 	
 	override def edges: Int = count
 }

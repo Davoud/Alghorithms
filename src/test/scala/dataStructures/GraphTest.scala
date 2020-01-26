@@ -33,15 +33,17 @@ object Sampler {
 	
 	def dag(): Digraph[Int] = {
 		val g = new Digraph[Int]()
-		g += 2
-		g += 4
+		
 		g +=
 			(0 -> 5, 0 -> 2, 0 -> 1,
 				3 -> 6, 3 -> 5, 3 -> 4, 3 -> 2,
 				6 -> 4, 6 -> 0,
 				5 -> 2,
-				3 -> 2,
 				1 -> 4)
+		
+		g += 2
+		g += 4
+		
 		g
 	}
 	
