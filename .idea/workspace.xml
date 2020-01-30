@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/KosarajuSharirSCC.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/DepthFirstOrder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/DepthFirstOrder.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/Digraph.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/Digraph.scala" afterDir="false" />
@@ -52,25 +56,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="algorithms" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>test(</find>
-      <find>ignore(</find>
-      <find>x.get</find>
-      <find>nodeinfo</find>
-      <find>inline</find>
-      <find>case class</find>
-      <find>node</find>
-      <find>size</find>
-      <find>getnode</find>
-      <find>def fill</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>ignore(</replace>
-      <replace>test(</replace>
-      <replace>node</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,9 +132,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3133000364659" />
+        <entry key="$PROJECT_DIR$" value="3146817964927" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3164433353" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="3280644262" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
     </option>
   </component>
@@ -464,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579894151119</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Modified DepthFirstOrder to pass its tests">
+      <created>1580066850227</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1580066850227</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -479,7 +471,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Made ArrayQueue Tests passed" />
     <MESSAGE value="Added selection sort" />
     <MESSAGE value="Added elementary sorts and some practices" />
     <MESSAGE value="Added RandomizedQueue and Deque" />
@@ -504,7 +495,8 @@
     <MESSAGE value="added graphs" />
     <MESSAGE value="Added a couple of tests for Digraph" />
     <MESSAGE value="Added BreadthFirstPaths and DepthFirstOrder with their tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BreadthFirstPaths and DepthFirstOrder with their tests" />
+    <MESSAGE value="Modified DepthFirstOrder to pass its tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified DepthFirstOrder to pass its tests" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -532,10 +524,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1578589765770" />
-    <state x="364" y="10" key="CommitChangelistDialog2" timestamp="1579894150526">
+    <state x="364" y="10" key="CommitChangelistDialog2" timestamp="1580066849526">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="364" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1579894150526" />
+    <state x="364" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1580066849526" />
     <state width="1530" height="800" key="GridCell.Tab.0.bottom" timestamp="1579723449444">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -552,14 +544,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1530" height="800" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579723449444" />
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1579894158800">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1580066852824">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1579894158800" />
-    <state x="510" y="35" key="refactoring.ChangeSignatureDialog" timestamp="1580064746274">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1580066852824" />
+    <state x="463" y="149" width="609" height="536" key="find.popup" timestamp="1580323338215">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="510" y="35" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1580064746274" />
+    <state x="463" y="149" width="609" height="536" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1580323338215" />
+    <state x="510" y="35" key="refactoring.ChangeSignatureDialog" timestamp="1580321007158">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="510" y="35" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1580321007158" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

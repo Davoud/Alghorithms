@@ -1,6 +1,6 @@
 package dataStructures
 
-import dataStructures.graphs.{BreadthFirstPaths, Digraph, Graph, Paths, SparseGraph, DepthFirstOrder}
+import dataStructures.graphs.{BreadthFirstPaths, DepthFirstOrder, Digraph, Graph, KosarajuSharirSCC, Paths, SparseGraph}
 import org.scalatest.{FlatSpec, Matchers}
 
 object Sampler {
@@ -14,7 +14,7 @@ object Sampler {
 	
 	def digraph(): Digraph[Int] = {
 		val g = new Digraph[Int]()
-		g += 1
+		
 		g +=
 			(0 -> 1, 0 -> 5,
 				2 -> 1, 2 -> 3,
@@ -31,21 +31,13 @@ object Sampler {
 		g
 	}
 	
-	def dag(): Digraph[Int] = {
-		val g = new Digraph[Int]()
-		
-		g +=
-			(0 -> 5, 0 -> 2, 0 -> 1,
-				3 -> 6, 3 -> 5, 3 -> 4, 3 -> 2,
-				6 -> 4, 6 -> 0,
-				5 -> 2,
-				1 -> 4)
-		
-		g += 2
-		g += 4
-		
-		g
-	}
+	def dag(): Digraph[Int] =
+		new Digraph[Int](0 -> 5, 0 -> 2, 0 -> 1,
+			3 -> 6, 3 -> 5, 3 -> 4, 3 -> 2,
+			6 -> 4, 6 -> 0,
+			5 -> 2,
+			1 -> 4)
+	
 	
 }
 
@@ -66,6 +58,12 @@ class DigraphTest extends FlatSpec with Matchers {
 		sample.adj(2).toSet should be(Set(1, 3))
 	}
 	
+	"It" should "return its reveres correctly" in {
+		
+		sample.toString() should be(sample.reversed.reversed.toString())
+		val sample2 = Sampler.dag()
+		sample2.toString() should be(sample2.reversed.reversed.toString())
+	}
 }
 
 class GraphTest extends FlatSpec with Matchers {
@@ -73,7 +71,7 @@ class GraphTest extends FlatSpec with Matchers {
 	def sampleGraph() = Sampler.graph()
 	
 	"Graph" should "have 13 vertices" in {
-		sampleGraph().vertices should be(13)
+		sampleGraph().vertices.size should be(13)
 	}
 	
 	"It" should "have 10 edges" in {
@@ -153,8 +151,19 @@ class BreadthFirstPathsTest extends FlatSpec with Matchers {
 
 class DepthFirstOrderTest extends FlatSpec with Matchers {
 	"Topological Order of graph" should "be as expected" in {
-		val topologicalSorter = new DepthFirstOrder[Int](Sampler.dag())
+		var dag = Sampler.dag()
+		val topologicalSorter = new DepthFirstOrder[Int](dag)
 		topologicalSorter.reversePost.toSeq should be(Seq(3, 6, 0, 5, 2, 1, 4))
-		
+	}
+	
+}
+
+class KosarajuSharirSCCTest extends FlatSpec with Matchers {
+	"Kosaraju-Sharir" should "validate strongly connection" in {
+		val g = new Digraph[Char]('a' -> 'b', 'b' -> 'a', 'a' -> 'c', 'c' -> 'd', 'd' -> 'c')
+		val scc = new KosarajuSharirSCC[Char](g)
+		scc.stronglyConnected('a', 'b') should be(true)
+		scc.stronglyConnected('c', 'd') should be(true)
+		scc.stronglyConnected('a', 'd') should be(false)
 	}
 }

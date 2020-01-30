@@ -9,14 +9,14 @@ class DepthFirstOrder[Vertex: Manifest](graph: Graph[Vertex])(implicit o: Orderi
 	
 	for (vertex <- graph.vertices) {
 		if (notMarked(vertex))
-			dfc(vertex)
+			dfs(vertex)
 	}
 	
-	private def dfc(vertex: Vertex): Unit = {
+	private def dfs(vertex: Vertex): Unit = {
 		marked += vertex -> true
 		
 		for (v <- graph.adj(vertex))
-			if (notMarked(v)) dfc(v)
+			if (notMarked(v)) dfs(v)
 		
 		reversPost push vertex
 	}
