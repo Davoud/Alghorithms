@@ -18,12 +18,30 @@ class EdgeWeightedDigraph(val numberOfVertices: Int) {
 	
 	def edges: Iterable[DirectedEdge] = _adj.fold(EmptyBag)((a, b) => a | b)
 	
-	def +=(edges: (Int, Int, Double)*): Unit = {
-		for (e <- edges)
-			addEdge(DirectedEdge(e._1, e._2, e._3))
+	def +=(edges: (Int, Int, Double)*): EdgeWeightedDigraph = {
+		edges.foreach(e => addEdge(DirectedEdge(e._1, e._2, e._3)))
+		this
 	}
 	
 	type Bag = HashSet[DirectedEdge]
 	
 	private def EmptyBag: Bag = new mutable.HashSet[DirectedEdge]()
+}
+
+class Topological(graph: EdgeWeightedDigraph) {
+	
+	private val marked = Array.fill[Boolean](graph.numberOfVertices)(false)
+	private val reversePost = mutable.ArrayStack[Int]()
+	
+	for (v <- 0 until graph.numberOfVertices)
+		if (!marked(v)) dfs(v)
+	
+	private def dfs(v: Int): Unit = {
+		marked(v) = true
+		for (edge <- graph.adj(v))
+			if (!marked(edge.to)) dfs(edge.to)
+		reversePost push v
+	}
+	
+	def order: Iterable[Int] = reversePost
 }
