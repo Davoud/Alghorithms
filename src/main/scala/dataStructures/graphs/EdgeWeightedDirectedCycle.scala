@@ -26,16 +26,16 @@ class EdgeWeightedDirectedCycle(graph: EdgeWeightedDigraph) {
 				edgeTo(w) = e
 				dfs(w)
 			} else if (onStack(w)) {
-				val c = traceBack(e, w)
+				traceBack(e)
 			}
 		}
 	}
 	
-	private def traceBack(e: DirectedEdge, w: Int): Option[List[DirectedEdge]] = {
+	private def traceBack(e: DirectedEdge): Option[List[DirectedEdge]] = {
 		_cycle = Some(List[DirectedEdge]())
 		
 		var x = e
-		while (x.from != w) {
+		while (x.from != e.to) {
 			_cycle = Some(x :: _cycle.get)
 			x = edgeTo(x.from)
 		}

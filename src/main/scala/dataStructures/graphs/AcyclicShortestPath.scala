@@ -9,14 +9,4 @@ class AcyclicShortestPath(graph: EdgeWeightedDigraph, sourceVertex: Int)
 	for (v <- new Topological(graph).order; e <- graph.adj(v))
 		relax(e)
 	
-	override protected def relax(edge: DirectedEdge): Unit = {
-		val s = edge.from
-		val t = edge.to
-		if (distTo(t) > distTo(s) + edge.weight) {
-			distTo(t) = distTo(s) + edge.weight
-			edgeTo(t) = Some(edge)
-		}
-	}
-	
-	
 }

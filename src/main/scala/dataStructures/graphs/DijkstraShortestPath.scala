@@ -14,14 +14,10 @@ class DijkstraShortestPath(graph: EdgeWeightedDigraph, source: Int)
 			relax(e)
 	}
 	
-	override protected def relax(edge: DirectedEdge): Unit = {
-		val s = edge.from
+	override protected def updated(edge: DirectedEdge): Unit = {
 		val t = edge.to
-		if (distTo(t) > distTo(s) + edge.weight) {
-			distTo(t) = distTo(s) + edge.weight
-			edgeTo(t) = Some(edge)
-			if (pq contains t) pq decreaseKey(t, distTo(t))
-			else pq insert(t, distTo(t))
-		}
+		if (pq contains t) pq decreaseKey(t, distTo(t))
+		else pq insert(t, distTo(t))
 	}
+	
 }

@@ -1,7 +1,7 @@
 package dataStructures
 
 import org.scalatest.{FlatSpec, Matchers}
-import dataStructures.graphs.{AcyclicShortestPath, DijkstraShortestPath, DirectedEdge, EdgeWeightedDigraph, EdgeWeightedDirectedCycle, Topological}
+import dataStructures.graphs.{AcyclicShortestPath, BellmanFordShortestPath, DijkstraShortestPath, DirectedEdge, EdgeWeightedDigraph, EdgeWeightedDirectedCycle, Topological}
 
 
 object DiSampler {
@@ -95,10 +95,39 @@ class AcyclicSPTest extends FlatSpec with Matchers {
 	}
 }
 
+class BellmanFordSPTest extends FlatSpec with Matchers {
+	val sp = new BellmanFordShortestPath(DiSampler.sample, 0)
+	
+	private def pathTo(vertex: Int): List[Int] = sp.pathTo(vertex).map(e => e.from).toList
+	
+	"Shortest path from 0 to 6 or 3" should "be 0 -> 4 -> 5 -> 2" in {
+		pathTo(6) == List(0, 4, 5, 2) should be(true)
+		pathTo(3) == List(0, 4, 5, 2) should be(true)
+	}
+	"Shortest path from 0 to 2" should "be 0 -> 4 -> 5" in {
+		pathTo(2) == List(0, 4, 5) should be(true)
+	}
+	"Shortest path from 0 to 5" should "be 0 -> 4" in {
+		pathTo(5) == List(0, 4) should be(true)
+	}
+	"Shortest path from 0 to 1 or 4 or 7" should "be 0" in {
+		pathTo(1) == List(0) should be(true)
+		pathTo(4) == List(0) should be(true)
+		pathTo(7) == List(0) should be(true)
+	}
+	"Shortest distance to 6 from 0" should "be 25.0" in {
+		sp.distanceTo(6) should be(25.0)
+	}
+}
+
 class EdgeWeightedDirectedCycleTest extends FlatSpec with Matchers {
 	"Sample Digraph" should "not have any cycle" in {
 		val cycle = new EdgeWeightedDirectedCycle(DiSampler.sample)
 		cycle.hasCycle should be(false)
+	}
+	"Sample Digraph with extra edge" should "have a cycle" in {
+		val cycle = new EdgeWeightedDirectedCycle(DiSampler.sample += ((3, 4, 5.5)))
+		cycle.hasCycle should be(true)
 	}
 	"This graph" should "have a cycle as 0 -> 1 -> 2 -> 3 -> 4 -> 0" in {
 		val c = new EdgeWeightedDirectedCycle(

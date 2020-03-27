@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/AcyclicShortestPath.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/EdgeWeightedDirectedCycle.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/ShortestPath.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/BellmanFordShortestPath.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/AcyclicShortestPath.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/AcyclicShortestPath.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/DijkstraShortestPath.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/DijkstraShortestPath.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/EdgeWeightedDigraph.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/EdgeWeightedDigraph.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/EdgeWeightedDirectedCycle.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/EdgeWeightedDirectedCycle.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/ShortestPath.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/ShortestPath.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/dataStructures/WeightedGraphsTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/dataStructures/WeightedGraphsTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -462,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585171908470</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Added AcyclicShortestPath with tests">
+      <created>1585250373214</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1585250373214</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -477,7 +484,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added elementary sorts and some practices" />
     <MESSAGE value="Added RandomizedQueue and Deque" />
     <MESSAGE value="Added Merge Sort" />
     <MESSAGE value="Added CollinearPoints" />
@@ -502,7 +508,8 @@
     <MESSAGE value="Added BreadthFirstPaths and DepthFirstOrder with their tests" />
     <MESSAGE value="Modified DepthFirstOrder to pass its tests" />
     <MESSAGE value="Added DijkstraShortestPath with tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DijkstraShortestPath with tests" />
+    <MESSAGE value="Added AcyclicShortestPath with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AcyclicShortestPath with tests" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -522,18 +529,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="583" y="333" width="378" height="170" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1536.834@0.0.1536.834" timestamp="1578590726031" />
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1578767745028">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1585336593983">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1578767745028" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1585336593983" />
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584803606304">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1584803606304" />
-    <state x="364" y="10" key="CommitChangelistDialog2" timestamp="1585171907503">
+    <state x="364" y="10" key="CommitChangelistDialog2" timestamp="1585250372074">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="364" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585171907503" />
+    <state x="364" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585250372074" />
     <state width="1530" height="800" key="GridCell.Tab.0.bottom" timestamp="1579723449444">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -550,10 +557,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1530" height="800" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579723449444" />
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1585171911068">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1585250375372">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585171911068" />
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585250375372" />
     <state x="486" y="235" width="609" height="536" key="find.popup" timestamp="1585163140006">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
