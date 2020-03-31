@@ -64,6 +64,13 @@ class ArrayQueue[A: Manifest](capacity: Int = 4) extends Queue[A] {
 		s
 	}
 	
+	def contains(element: A): Boolean = {
+		for (i <- queue.indices)
+			if (queue(i).isDefined && queue(i).get == element)
+				return true
+		false
+	}
+	
 	override def iterator: Iterator[A] = new QueueIterator[A](queue)
 	
 	class QueueIterator[T](q: Array[Option[T]]) extends Iterator[T] {

@@ -4,7 +4,7 @@ import scala.collection.mutable
 
 abstract class ShortestPath(graph: EdgeWeightedDigraph, sourceVertex: Int) {
 	
-	protected val edgeTo = Array.fill[Option[DirectedEdge]](graph.numberOfVertices)(None)
+	protected val edgeTo: Array[Option[DirectedEdge]] = Array.fill[Option[DirectedEdge]](graph.numberOfVertices)(None)
 	protected val distTo = Array.fill[Double](graph.numberOfVertices)(Double.PositiveInfinity)
 	distTo(sourceVertex) = 0.0
 	
