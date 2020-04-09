@@ -12,14 +12,21 @@ class SeamCarver(private val pic: Picture) {
 	
 	def picture: Picture = _pic.getOrElse(pic)
 	
-	def energies: EnergyMatrix = new EnergyMatrix(picture)
+	private var energies: EnergyMatrix = new EnergyMatrix(picture)
 	
-	def width: Int = pic.width()
+	var width: Int = pic.width()
+	var height: Int = pic.height()
 	
-	def height: Int = pic.height()
+	private def set(p: Picture): Unit = {
+		_pic = Some(p)
+		width = p.width()
+		height = p.height()
+		last = Xy(width, height)
+		energies = new EnergyMatrix(p)
+	}
 	
 	private val first: Xy = Xy(-1, -1)
-	private val last: Xy = Xy(width, height)
+	private var last: Xy = Xy(width, height)
 	
 	def findHorizontalSeam: List[Int] = findSeam(energies.horizontalTopOrder, vAdj, p => p.y)
 	
@@ -70,18 +77,33 @@ class SeamCarver(private val pic: Picture) {
 	
 	def removeHorizontalSeam(seam: List[Int]): Unit = {
 		require(seam != null, "seam can not be null")
-		require(seam.length != width, s"invalid seam length: ${seam.length} == $width")
+		require(seam.length == width, s"invalid seam length: ${seam.length} == $width")
 		require(seam.nonEmpty, "seam can not be empty")
 		require(validate(seam, height), "seam has invalid jump or out-of-range value")
+		require(height > 1, "picture height most be greater than 1")
+		
+		val newPic = new Picture(width, height - 1)
+		for (y <- 0 until height; x <- 0 until width) {
+			val _y = if (y >= seam(x)) y - 1 else y
+			newPic.setRGB(x, _y, picture.getRGB(x, y))
+		}
+		set(newPic)
 		
 	}
 	
 	def removeVerticalSeam(seam: List[Int]): Unit = {
 		require(seam != null)
-		require(seam.length != height, s"invalid seam length: ${seam.length} == $height")
+		require(seam.length == height, s"invalid seam length: ${seam.length} == $height")
 		require(seam.nonEmpty, "seam can not be empty")
 		require(validate(seam, width), "seam has invalid jump or out-of-range value")
+		require(width > 1, "Picture width most be greater than 1")
 		
+		val newPic = new Picture(width - 1, height)
+		for (x <- 0 until width; y <- 0 until height) {
+			val _x = if (x >= seam(y)) x - 1 else x
+			newPic.setRGB(_x, y, picture.getRGB(x, y))
+		}
+		set(newPic)
 	}
 	
 	
@@ -159,6 +181,7 @@ class SeamCarver(private val pic: Picture) {
 				for (v <- hAdj(p))
 					if (!marked.contains(v)) dfs(v)
 				reversPost push p
+				
 			}
 			
 			reversPost

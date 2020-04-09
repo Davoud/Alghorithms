@@ -7,20 +7,21 @@ object SeamCarverTest {
 	
 	def test1(): Unit = {
 		
-		//val file = ".\\src\\main\\scala\\graphAssignments\\sample.bmp"
-		val file = ".\\src\\main\\scala\\graphAssignments\\bout_40w.jpg"
+		val file = ".\\src\\main\\scala\\graphAssignments\\test2.jpg"
+		
 		val pic = new Picture(file)
 		println(s"Image ${pic.width()}x${pic.height()}")
 		
 		val carver = new SeamCarver(pic)
-		//println(carver.energies.inTopologicalOrder)
-		val vSeam = carver.findVerticalSeam
-		println(s"Vertical Length: ${vSeam.length}")
-		println(vSeam)
 		
-		val hSeam = carver.findHorizontalSeam
-		println(s"Horizontal Length ${hSeam.length}")
-		println(hSeam)
+		
+		for (i <- 0 until 150) {
+			carver.removeHorizontalSeam(carver.findHorizontalSeam)
+			println(s"Passed (H) phase $i")
+		}
+		
+		carver.picture.save(".\\src\\main\\scala\\graphAssignments\\test_next_h.jpg")
+		println("saved")
 		
 		
 	}

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarver.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarverTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ndavo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ndavo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/BellmanFordShortestPath.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/BellmanFordShortestPath.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/ShortestPath.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/graphs/ShortestPath.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataStructures/queues/ArrayQueue.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataStructures/queues/ArrayQueue.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarver.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarver.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarverTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarverTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -481,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585338744964</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added SeamCarver (can find vertical and horizontal seam)">
+      <created>1585683908933</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1585683908933</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView">
@@ -496,7 +498,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added Merge Sort" />
     <MESSAGE value="Added CollinearPoints" />
     <MESSAGE value="Added QuickSort" />
     <MESSAGE value="Added QuickSort with 3 way partitioning" />
@@ -521,7 +522,8 @@
     <MESSAGE value="Added DijkstraShortestPath with tests" />
     <MESSAGE value="Added AcyclicShortestPath with tests" />
     <MESSAGE value="Added BellmanFordShortestPath with tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BellmanFordShortestPath with tests" />
+    <MESSAGE value="Added SeamCarver (can find vertical and horizontal seam)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SeamCarver (can find vertical and horizontal seam)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -553,26 +555,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="500" y="277" width="535" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.834@0.0.1536.834" timestamp="1585650118237" />
-    <state x="364" y="10" key="CommitChangelistDialog2" timestamp="1585338744212">
+    <state x="502" y="0" key="CommitChangelistDialog2" timestamp="1585683907393">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="364" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585338744212" />
-    <state width="1537" height="235" key="GridCell.Tab.0.bottom" timestamp="1585683803190">
+    <state x="502" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585683907393" />
+    <state width="1537" height="235" key="GridCell.Tab.0.bottom" timestamp="1586451996013">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585683803190" />
-    <state width="1537" height="235" key="GridCell.Tab.0.center" timestamp="1585683803189">
+    <state width="1537" height="235" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
+    <state width="1537" height="235" key="GridCell.Tab.0.center" timestamp="1586451996013">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585683803189" />
-    <state width="1537" height="235" key="GridCell.Tab.0.left" timestamp="1585683803189">
+    <state width="1537" height="235" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
+    <state width="1537" height="235" key="GridCell.Tab.0.left" timestamp="1586451996013">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585683803189" />
-    <state width="1537" height="235" key="GridCell.Tab.0.right" timestamp="1585683803189">
+    <state width="1537" height="235" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
+    <state width="1537" height="235" key="GridCell.Tab.0.right" timestamp="1586451996013">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585683803189" />
+    <state width="1537" height="235" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
     <state width="1537" height="271" key="GridCell.Tab.1.bottom" timestamp="1585509703404">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -593,10 +595,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585508121085" />
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1585338746386">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1585683914741">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585338746386" />
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585683914741" />
     <state x="486" y="235" width="609" height="536" key="find.popup" timestamp="1585163140006">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
