@@ -1,9 +1,10 @@
 package graphAssignments
 
-import edu.princeton.cs.algs4.Picture
+import edu.princeton.cs.algs4.{Picture, Stopwatch}
+
 import scala.annotation.tailrec
 import scala.collection.mutable
-import scala.collection.mutable.ListBuffer
+
 
 class SeamCarver(private val pic: Picture) {
 	require(pic != null, s"input picture can not be null")
@@ -44,8 +45,11 @@ class SeamCarver(private val pic: Picture) {
 		}
 		
 		distTo(Xy(-1, -1)) = 0.0
+		val s = new Stopwatch()
 		for (p <- topological; v <- adj(p))
 			relax(p, v)
+		
+		println(s"Relaxed after ${s.elapsedTime()}")
 		
 		pathTo(edgeTo.toMap, selector)
 	}
@@ -144,9 +148,10 @@ class SeamCarver(private val pic: Picture) {
 		private val xOff = Xy(1, 0)
 		private val yOff = Xy(0, 1)
 		
+		val sw = new Stopwatch()
 		for (x <- 0 until width; y <- 0 until height)
 			matrix(y)(x) = energy(Xy(x, y))
-		
+		println(s"Build energy matrix after ${sw.elapsedTime()}")
 		
 		@inline def apply(p: Xy): Double =
 			if (p.x == -1 && p.y == -1 || (p.x == width && p.y == height)) 0
@@ -181,13 +186,13 @@ class SeamCarver(private val pic: Picture) {
 				for (v <- hAdj(p))
 					if (!marked.contains(v)) dfs(v)
 				reversPost push p
-				
 			}
 			
 			reversPost
 		}
 		
 		def horizontalTopOrder: Seq[Xy] = {
+			val sw = new Stopwatch()
 			val marked = mutable.HashSet[Xy]()
 			val reversPost = mutable.ArrayStack[Xy]()
 			
@@ -204,6 +209,7 @@ class SeamCarver(private val pic: Picture) {
 				reversPost push p
 			}
 			
+			println(s"Ordered after ${sw.elapsedTime()}")
 			reversPost
 		}
 		

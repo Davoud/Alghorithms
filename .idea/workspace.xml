@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/WordNet.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/hypernyms.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/synsets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/wordNet/sampleSyns.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/wordNet/wordNetTests.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ndavo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ndavo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarver.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarver.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarverTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/graphAssignments/SeamCarverTest.scala" afterDir="false" />
     </list>
@@ -16,10 +26,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideWarnings" value="true" />
-    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -53,9 +59,6 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="algorithms" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -73,10 +76,10 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -90,52 +93,85 @@
       <command value="git add *" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="ScalaTest.SynsetTest.Synset length of sample should be 23&#10;Synset id of '1530s' should be 1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="algorithms" />
+      <option name="VM_PARAMETERS" value="-Xss18m" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SynsetTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="algorithms" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="wordNet.SynsetTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynsetTest.Synset length of sample should be 23&#10;Synset id of '1530s' should be 1" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="algorithms" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="wordNet.SynsetTest" />
+      <option name="testName" value="Synset length of sample should be 23&#10;Synset id of '1530s' should be 1" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.SynsetTest.Synset length of sample should be 23&#10;Synset id of '1530s' should be 1" />
+        <item itemvalue="ScalaTest.SynsetTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SbtLocalSettings">
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="algorithms" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="algorithms [file:/C:/Users/ndavo/Documents/coding/Algorithms/]" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value="algorithms-build" />
-                <option name="path" value="$PROJECT_DIR$/project" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$" value="3148207934475" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="3164433353" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
-      </map>
-    </option>
   </component>
   <component name="ScalaProjectSettings">
     <option name="dontShowConversionDialog" value="true" />
@@ -143,18 +179,6 @@
       <map>
         <entry key="xml" value="XML" />
       </map>
-    </option>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -483,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585683908933</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="SeamCarver completed">
+      <created>1586452196350</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1586452196351</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -498,7 +529,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added CollinearPoints" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added QuickSort" />
     <MESSAGE value="Added QuickSort with 3 way partitioning" />
     <MESSAGE value="Added MaxPQ And Heap Sort" />
@@ -523,7 +554,8 @@
     <MESSAGE value="Added AcyclicShortestPath with tests" />
     <MESSAGE value="Added BellmanFordShortestPath with tests" />
     <MESSAGE value="Added SeamCarver (can find vertical and horizontal seam)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SeamCarver (can find vertical and horizontal seam)" />
+    <MESSAGE value="SeamCarver completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="SeamCarver completed" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -531,18 +563,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="77" key="#Auto_Import/0.0.1536.834@0.0.1536.834" timestamp="1585506086303" />
-    <state x="361" y="77" key="#Notifications" timestamp="1579374345820">
+    <state x="361" y="58" key="#Plugins" timestamp="1589566205711">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="77" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1579374345820" />
-    <state x="499" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1585648872938">
+    <state x="361" y="58" key="#Plugins/0.0.1536.834@0.0.1536.834" timestamp="1589566205711" />
+    <state x="499" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1589656079858">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="499" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1585648872938" />
-    <state x="583" y="333" width="378" height="170" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1578590726031">
+    <state x="499" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1589656079858" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586456565843">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="583" y="333" width="378" height="170" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1536.834@0.0.1536.834" timestamp="1578590726031" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1586456565843" />
+    <state x="548" y="122" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1586456459423">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="548" y="122" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.834@0.0.1536.834" timestamp="1586456459423" />
     <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1585336593983">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -555,26 +591,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="500" y="277" width="535" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.834@0.0.1536.834" timestamp="1585650118237" />
-    <state x="502" y="0" key="CommitChangelistDialog2" timestamp="1585683907393">
+    <state x="502" y="0" key="CommitChangelistDialog2" timestamp="1586452195690">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="502" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585683907393" />
-    <state width="1537" height="235" key="GridCell.Tab.0.bottom" timestamp="1586451996013">
+    <state x="502" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586452195690" />
+    <state width="1537" height="321" key="GridCell.Tab.0.bottom" timestamp="1586456682422">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
-    <state width="1537" height="235" key="GridCell.Tab.0.center" timestamp="1586451996013">
+    <state width="1537" height="321" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586456682422" />
+    <state width="1537" height="321" key="GridCell.Tab.0.center" timestamp="1586456682422">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
-    <state width="1537" height="235" key="GridCell.Tab.0.left" timestamp="1586451996013">
+    <state width="1537" height="321" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586456682422" />
+    <state width="1537" height="321" key="GridCell.Tab.0.left" timestamp="1586456682422">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
-    <state width="1537" height="235" key="GridCell.Tab.0.right" timestamp="1586451996013">
+    <state width="1537" height="321" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586456682422" />
+    <state width="1537" height="321" key="GridCell.Tab.0.right" timestamp="1586456682422">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="235" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586451996013" />
+    <state width="1537" height="321" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586456682422" />
     <state width="1537" height="271" key="GridCell.Tab.1.bottom" timestamp="1585509703404">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -595,18 +631,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="60" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585508121085" />
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1585683914741">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1586452198189">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585683914741" />
-    <state x="486" y="235" width="609" height="536" key="find.popup" timestamp="1585163140006">
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586452198189" />
+    <state x="486" y="235" width="611" height="536" key="find.popup" timestamp="1589561209901">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="486" y="235" width="609" height="536" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1585163140006" />
-    <state x="510" y="35" key="refactoring.ChangeSignatureDialog" timestamp="1580321007158">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="510" y="35" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1580321007158" />
+    <state x="486" y="235" width="611" height="536" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1589561209901" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
