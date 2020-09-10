@@ -8,7 +8,6 @@ class BellmanFordShortestPath(graph: EdgeWeightedDigraph, source: Int) extends S
 	
 	
 	for (i <- 0 until graph.numberOfVertices) {
-		
 		for (v <- 0 until graph.numberOfVertices) {
 			for (e <- graph.adj(v))
 				relax(e)

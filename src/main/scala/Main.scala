@@ -1,6 +1,6 @@
-import graphAssignments.SeamCarverTest
+import graphAssignments._
 
 object Main extends App {
-	SeamCarverTest.performance()
+	WordNetTest.Test()
 }
 
