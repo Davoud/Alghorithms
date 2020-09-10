@@ -77,4 +77,15 @@ class KeyIndexCountTest extends FlatSpec with Matchers {
 			(a(w) <= a(w + 1)) should be(true)
 		}
 	}
+	
+	"3 way quick sort " should "sort sample array" in {
+		
+		val a = new Quick3String(sampleThree()).Result
+		for (w <- 0 until a.length - 1) {
+			//println (a(w))
+			(a(w) <= a(w + 1)) should be(true)
+		}
+		
+		
+	}
 }
