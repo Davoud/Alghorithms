@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/strings/TriesST.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/strings/TriesTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/strings/TriesST.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/strings/TriesST.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/strings/TriesTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/strings/TriesTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,22 +86,21 @@
       <command value="git add *" />
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.TriesTest.TriesST should behave as it expected">
-    <configuration name="KeyIndexCountTest.3 way quick sort should sort sample array" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+  <component name="RunManager" selected="ScalaTest.TriesTest.Match length '1234' should count number of words in sample text">
+    <configuration name="TriesTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="algorithms" />
       <option name="allowRunningInParallel" value="false" />
       <option name="selectedOptions">
         <set />
       </option>
-      <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.KeyIndexCountTest" />
-      <option name="testName" value="3 way quick sort should sort sample array" />
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="strings.TriesTest" />
       <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriesTest.Match length '1234' should be 4" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="TriesTest.Match length '1234' should count number of words in sample text" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="algorithms" />
       <option name="allowRunningInParallel" value="false" />
       <option name="selectedOptions">
@@ -109,35 +108,7 @@
       </option>
       <option name="testKind" value="Test name" />
       <option name="testClassPath" value="strings.TriesTest" />
-      <option name="testName" value="Match length '1234' should be 4" />
-      <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TriesTest.Option(null) should be None" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="algorithms" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="selectedOptions">
-        <set />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.TriesTest" />
-      <option name="testName" value="Option(null) should be None" />
-      <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TriesTest.TriesST should behave as it expected" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="algorithms" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="selectedOptions">
-        <set />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.TriesTest" />
-      <option name="testName" value="TriesST should behave as it expected" />
+      <option name="testName" value="Match length '1234' should count number of words in sample text" />
       <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,13 +128,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TriesTest.TriesST should remove a key correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="algorithms" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="strings.TriesTest" />
+      <option name="testName" value="TriesST should remove a key correctly" />
+      <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriesTest.TriesST should return None for missing key 'b'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="algorithms" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="strings.TriesTest" />
+      <option name="testName" value="TriesST should return None for missing key 'b'" />
+      <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.TriesTest.TriesST should behave as it expected" />
-        <item itemvalue="ScalaTest.TriesTest.Match length '1234' should be 4" />
+        <item itemvalue="ScalaTest.TriesTest.Match length '1234' should count number of words in sample text" />
+        <item itemvalue="ScalaTest.TriesTest.TriesST should remove a key correctly" />
+        <item itemvalue="ScalaTest.TriesTest" />
+        <item itemvalue="ScalaTest.TriesTest.TriesST should return None for missing key 'b'" />
         <item itemvalue="ScalaTest.TriesTest.TriesST should get single item" />
-        <item itemvalue="ScalaTest.TriesTest.Option(null) should be None" />
-        <item itemvalue="ScalaTest.KeyIndexCountTest.3 way quick sort should sort sample array" />
       </list>
     </recent_temporary>
   </component>
@@ -186,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558081623191</updated>
-    </task>
-    <task id="LOCAL-00001" summary="First commit Injellij">
-      <created>1558082550554</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1558082550554</updated>
     </task>
     <task id="LOCAL-00002" summary="fixed packege issues">
       <created>1558118558308</created>
@@ -530,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599759109361</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Added Tries Symbol Table with tests">
+      <created>1600285674457</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1600285674458</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -546,7 +545,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refactored Solver and Board" />
     <MESSAGE value="Added method body to BST" />
     <MESSAGE value="Added some test for BST" />
     <MESSAGE value="Added TreeVisualizer" />
@@ -571,7 +569,8 @@
     <MESSAGE value="Added Sysnsets with test" />
     <MESSAGE value="Added MSD string sort" />
     <MESSAGE value="Added 3way quick sort for string" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 3way quick sort for string" />
+    <MESSAGE value="Added Tries Symbol Table with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tries Symbol Table with tests" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -583,54 +582,58 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="172" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1600276037988" />
-    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599365127005">
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1601147768015">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1599365127005" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1599759108293">
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1601147768015" />
+    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600285782036">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1599759108293" />
-    <state width="1537" height="255" key="GridCell.Tab.0.bottom" timestamp="1600285134429">
+    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1600285782036" />
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1600285673194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1600285134429" />
-    <state width="1537" height="255" key="GridCell.Tab.0.center" timestamp="1600285134429">
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1600285673194" />
+    <state width="1537" height="255" key="GridCell.Tab.0.bottom" timestamp="1601961383487">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1600285134429" />
-    <state width="1537" height="255" key="GridCell.Tab.0.left" timestamp="1600285134429">
+    <state width="1537" height="255" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1601961383487" />
+    <state width="1537" height="255" key="GridCell.Tab.0.center" timestamp="1601961383487">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1600285134429" />
-    <state width="1537" height="255" key="GridCell.Tab.0.right" timestamp="1600285134429">
+    <state width="1537" height="255" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1601961383487" />
+    <state width="1537" height="255" key="GridCell.Tab.0.left" timestamp="1601961383487">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1600285134429" />
-    <state width="1537" height="271" key="GridCell.Tab.1.bottom" timestamp="1600277411631">
+    <state width="1537" height="255" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1601961383487" />
+    <state width="1537" height="255" key="GridCell.Tab.0.right" timestamp="1601961383487">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1600277411631" />
-    <state width="1537" height="271" key="GridCell.Tab.1.center" timestamp="1600277411630">
+    <state width="1537" height="255" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1601961383487" />
+    <state width="1537" height="271" key="GridCell.Tab.1.bottom" timestamp="1601927028867">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1600277411630" />
-    <state width="1537" height="271" key="GridCell.Tab.1.left" timestamp="1600277411630">
+    <state width="1537" height="271" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1601927028867" />
+    <state width="1537" height="271" key="GridCell.Tab.1.center" timestamp="1601927028867">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1600277411630" />
-    <state width="1537" height="271" key="GridCell.Tab.1.right" timestamp="1600277411631">
+    <state width="1537" height="271" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1601927028867" />
+    <state width="1537" height="271" key="GridCell.Tab.1.left" timestamp="1601927028867">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1600277411631" />
-    <state x="277" y="62" key="SettingsEditor" timestamp="1599401540797">
+    <state width="1537" height="271" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1601927028867" />
+    <state width="1537" height="271" key="GridCell.Tab.1.right" timestamp="1601927028867">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1599401540797" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1599759112009">
+    <state width="1537" height="271" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1601927028867" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1600327842853">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1599759112009" />
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1600327842853" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1600285685248">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1600285685248" />
     <state x="570" y="107" width="611" height="558" key="find.popup" timestamp="1600267176425">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
