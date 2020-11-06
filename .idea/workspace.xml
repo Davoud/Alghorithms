@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ef8d24-4586-4293-af34-1e1eb75d08b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/strings/Alphabet.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/strings/KMP.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/strings/StringFinder.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/strings/AlphabetTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/strings/SearchTests.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/strings/BoyerMoore.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/strings/KMP.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/strings/KMP.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/strings/SearchTests.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/strings/SearchTests.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,72 +99,71 @@
       <command value="git add *" />
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.AlphabetTest.Alphabet(ACGT) should converts arbitrary text to indices">
-    <configuration name="AlphabetTest.Alphabet(ACGT) should convert arbitrary text to indices ignoring invalid letters" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+  <component name="RunManager" selected="ScalaTest.SearchTests.BoyerMoor (ABC) should find the pattern">
+    <configuration name="SearchTests" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="algorithms" />
       <option name="allowRunningInParallel" value="false" />
       <option name="selectedOptions">
         <set />
       </option>
-      <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.AlphabetTest" />
-      <option name="testName" value="Alphabet(ACGT) should convert arbitrary text to indices ignoring invalid letters" />
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="strings.SearchTests" />
       <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlphabetTest.Alphabet(ACGT) should convert arbitrary text to indices" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="SearchTests.BoyerMoor (ABC) should find the pattern" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="algorithms" />
       <option name="allowRunningInParallel" value="false" />
       <option name="selectedOptions">
         <set />
       </option>
       <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.AlphabetTest" />
-      <option name="testName" value="Alphabet(ACGT) should convert arbitrary text to indices" />
+      <option name="testClassPath" value="strings.SearchTests" />
+      <option name="testName" value="BoyerMoor (ABC) should find the pattern" />
       <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlphabetTest.Alphabet(ACGT) should converts arbitrary text to indices" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="SearchTests.For should descend in" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="algorithms" />
       <option name="allowRunningInParallel" value="false" />
       <option name="selectedOptions">
         <set />
       </option>
       <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.AlphabetTest" />
-      <option name="testName" value="Alphabet(ACGT) should converts arbitrary text to indices" />
+      <option name="testClassPath" value="strings.SearchTests" />
+      <option name="testName" value="For should descend in" />
       <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlphabetTest.Alphabet(ACGT) should converts back to string with indice" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="SearchTests.KMP should find substring&#10;KMP should find substring (in middle)&#10;KMP should not find substring (in middle)&#10;KMP (ABC) should find the pattern" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="algorithms" />
       <option name="allowRunningInParallel" value="false" />
       <option name="selectedOptions">
         <set />
       </option>
       <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.AlphabetTest" />
-      <option name="testName" value="Alphabet(ACGT) should converts back to string with indice" />
+      <option name="testClassPath" value="strings.SearchTests" />
+      <option name="testName" value="KMP should find substring&#10;KMP should find substring (in middle)&#10;KMP should not find substring (in middle)&#10;KMP (ABC) should find the pattern" />
       <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlphabetTest.Alphabet(ACGT) should specify other chars as invalid" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="SearchTests.KMP should not find substring (in middle)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="algorithms" />
       <option name="allowRunningInParallel" value="false" />
       <option name="selectedOptions">
         <set />
       </option>
       <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="strings.AlphabetTest" />
-      <option name="testName" value="Alphabet(ACGT) should specify other chars as invalid" />
+      <option name="testClassPath" value="strings.SearchTests" />
+      <option name="testName" value="KMP should not find substring (in middle)" />
       <option name="workingDirectory" value="C:\Users\ndavo\Documents\Coding\Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="ScalaTest.AlphabetTest.Alphabet(ACGT) should converts arbitrary text to indices" />
-        <item itemvalue="ScalaTest.AlphabetTest.Alphabet(ACGT) should converts back to string with indice" />
-        <item itemvalue="ScalaTest.AlphabetTest.Alphabet(ACGT) should convert arbitrary text to indices ignoring invalid letters" />
-        <item itemvalue="ScalaTest.AlphabetTest.Alphabet(ACGT) should convert arbitrary text to indices" />
-        <item itemvalue="ScalaTest.AlphabetTest.Alphabet(ACGT) should specify other chars as invalid" />
+        <item itemvalue="ScalaTest.SearchTests.BoyerMoor (ABC) should find the pattern" />
+        <item itemvalue="ScalaTest.SearchTests.For should descend in" />
+        <item itemvalue="ScalaTest.SearchTests.KMP should find substring&#10;KMP should find substring (in middle)&#10;KMP should not find substring (in middle)&#10;KMP (ABC) should find the pattern" />
+        <item itemvalue="ScalaTest.SearchTests.KMP should not find substring (in middle)" />
+        <item itemvalue="ScalaTest.SearchTests" />
       </list>
     </recent_temporary>
   </component>
@@ -201,13 +198,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558081623191</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test connection manager">
-      <created>1558288375742</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1558288375742</updated>
     </task>
     <task id="LOCAL-00004" summary="make more tests pass">
       <created>1558460246889</created>
@@ -545,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601962823074</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Added Alphabet and KMP string search (no tests)">
+      <created>1604593587683</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1604593587683</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -561,7 +558,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added some test for BST" />
     <MESSAGE value="Added TreeVisualizer" />
     <MESSAGE value="Completed TreeVisualizer (pass 1)" />
     <MESSAGE value="Completed TreeVisualizer (pass 2)" />
@@ -586,7 +582,8 @@
     <MESSAGE value="Added 3way quick sort for string" />
     <MESSAGE value="Added Tries Symbol Table with tests" />
     <MESSAGE value="Completed Tries Symbol Table and its tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Tries Symbol Table and its tests" />
+    <MESSAGE value="Added Alphabet and KMP string search (no tests)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Alphabet and KMP string search (no tests)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -602,10 +599,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.834@0.0.1536.834" timestamp="1604587396953" />
-    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1604592736807">
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1604662734969">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1604592736807" />
+    <state x="574" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1604662734969" />
     <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600285782036">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -618,10 +615,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="826" y="231" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1604587587894" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1601962822334">
+    <state x="582" y="0" key="CommitChangelistDialog2" timestamp="1604593586704">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1601962822334" />
+    <state x="582" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1604593586704" />
     <state width="396" height="438" key="DebuggerActiveHint" timestamp="1604587537304">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -630,46 +627,46 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1602480094970" />
-    <state width="1537" height="255" key="GridCell.Tab.0.bottom" timestamp="1604592625890">
+    <state width="1537" height="255" key="GridCell.Tab.0.bottom" timestamp="1604664828163">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604592625890" />
-    <state width="1537" height="255" key="GridCell.Tab.0.center" timestamp="1604592625889">
+    <state width="1537" height="255" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604664828163" />
+    <state width="1537" height="255" key="GridCell.Tab.0.center" timestamp="1604664828163">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604592625889" />
-    <state width="1537" height="255" key="GridCell.Tab.0.left" timestamp="1604592625889">
+    <state width="1537" height="255" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604664828163" />
+    <state width="1537" height="255" key="GridCell.Tab.0.left" timestamp="1604664828163">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604592625889" />
-    <state width="1537" height="255" key="GridCell.Tab.0.right" timestamp="1604592625890">
+    <state width="1537" height="255" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604664828163" />
+    <state width="1537" height="255" key="GridCell.Tab.0.right" timestamp="1604664828163">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="255" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604592625890" />
-    <state width="1537" height="271" key="GridCell.Tab.1.bottom" timestamp="1604589098021">
+    <state width="1537" height="255" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604664828163" />
+    <state width="1537" height="271" key="GridCell.Tab.1.bottom" timestamp="1604593980046">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604589098021" />
-    <state width="1537" height="271" key="GridCell.Tab.1.center" timestamp="1604589098021">
+    <state width="1537" height="271" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604593980046" />
+    <state width="1537" height="271" key="GridCell.Tab.1.center" timestamp="1604593980046">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1604589098021" />
-    <state width="1537" height="271" key="GridCell.Tab.1.left" timestamp="1604589098021">
+    <state width="1537" height="271" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1604593980046" />
+    <state width="1537" height="271" key="GridCell.Tab.1.left" timestamp="1604593980046">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1604589098021" />
-    <state width="1537" height="271" key="GridCell.Tab.1.right" timestamp="1604589098021">
+    <state width="1537" height="271" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1604593980046" />
+    <state width="1537" height="271" key="GridCell.Tab.1.right" timestamp="1604593980046">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1537" height="271" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1604589098021" />
+    <state width="1537" height="271" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1604593980046" />
     <state x="277" y="62" key="SettingsEditor" timestamp="1600327842853">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1600327842853" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1601962834287">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604593591305">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1601962834287" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604593591305" />
     <state x="570" y="107" width="611" height="558" key="find.popup" timestamp="1604590726019">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

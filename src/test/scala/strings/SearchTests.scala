@@ -16,10 +16,26 @@ class SearchTests extends FlatSpec with Matchers {
 		kmp.search(text) should be(0)
 	}
 	
-	"2 Dim Array" should "work as expected" in {
-		val a = Array.fill(256, 4)(0)
-		val s = "1234"
-		a(s(1))(0) = 10
-		println(a(s(1))(0))
+	"KMP" should "find substring (in middle)" in {
+		val pattern = "properties of limit"
+		val kmp = new KMP(pattern)
+		kmp.search(text) should be(text.indexOf(pattern))
 	}
+	
+	"KMP" should "not find substring (in middle)" in {
+		val pattern = "not in the text"
+		val kmp = new KMP(pattern)
+		kmp.search(text) should be(text.length)
+	}
+	
+	"KMP (ABC)" should "find the pattern" in {
+		var kmp = new KMPAlphabet("ABABAC", new Alphabet("ABC"))
+		kmp.search("BCBAABACAABABACAA") should be(9)
+	}
+	
+	"BoyerMoor (ABC)" should "find the pattern" in {
+		var bm = new BoyerMoore("ABABAC", new Alphabet("ABC"))
+		bm.search("BCBAABACAABABACAA") should be(9)
+	}
+	
 }

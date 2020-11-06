@@ -21,6 +21,7 @@ class KMP(val pattern: String) extends StringFinder {
 		val dfa = Array.fill(R, M)(0)
 		var X = 0
 		var j = 1
+		dfa(pattern(0))(0) = 1
 		while (j < M) {
 			for (c <- 0 until R) dfa(c)(j) = dfa(c)(X)
 			dfa(pattern(j))(j) = j + 1
@@ -36,7 +37,7 @@ class KMPAlphabet(pattern: String, alphabet: Alphabet) extends StringFinder {
 	
 	private val M = pattern.length
 	private val R = alphabet.R
-	private val dfa = computeDfa()
+	val dfa = computeDfa()
 	
 	override def search(text: String): Int = {
 		require(alphabet.Verify(text))
@@ -55,16 +56,18 @@ class KMPAlphabet(pattern: String, alphabet: Alphabet) extends StringFinder {
 		val dfa = Array.fill(R, M)(0)
 		var X = 0
 		var j = 1
+		dfa(alphabet(pattern(0)))(0) = 1
 		while (j < M) {
 			for (c <- 0 until R) dfa(c)(j) = dfa(c)(X)
-			dfa(at(j))(j) = j + 1
-			X = dfa(at(j))(X)
+			val index = alphabet(pattern(j))
+			dfa(index)(j) = j + 1
+			X = dfa(index)(X)
 			j += 1
 		}
 		dfa
 	}
 	
-	@inline def at(index: Int): Int = alphabet(pattern(index))
+	
 	
 	
 }
